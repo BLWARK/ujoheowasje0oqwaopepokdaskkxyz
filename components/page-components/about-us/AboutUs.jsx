@@ -114,7 +114,7 @@ const AboutUs = () => {
         style={getTransformStyle(80, -800, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/Ball-blue2.png"
+          src="/Ball-Blue2.png"
           alt="Hero Image"
           width={80}
           height={80}
@@ -197,7 +197,7 @@ const AboutUs = () => {
         style={getTransformStyle(0, -100, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/Ball-blue2.png"
+          src="/Ball-Blue2.png"
           alt="Hero Image"
           width={50}
           height={50}
