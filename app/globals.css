@@ -11,8 +11,8 @@ button {
   cursor: url('/Click.png'), auto;
 }
 
-a {
-  cursor: url('/Click.png'), auto;
+a.cursor-custom {
+  cursor: url('/path-to-cursor1.png'), auto !important;
 }
 
 .nav-link {
