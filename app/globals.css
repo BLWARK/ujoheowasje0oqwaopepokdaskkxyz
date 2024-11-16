@@ -12,7 +12,7 @@ button {
 }
 
 a.cursor-custom {
-  cursor: url('/path-to-cursor1.png'), auto !important;
+  cursor: url('/Click.png'), auto !important;
 }
 
 .nav-link {
