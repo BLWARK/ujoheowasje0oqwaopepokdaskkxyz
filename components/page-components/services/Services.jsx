@@ -106,12 +106,12 @@ const Services = () => {
             your vision to life.
           </p>
 
-          <div className="grid gap-10 py-10 grid-cols-2 md:grid-cols-2 xl:grid-cols-4 justify-items-center mt-10 px-5">
+          <div className="grid gap-10 py-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-items-center mt-10 px-5">
             {cards.map((card, index) => (
               <div
                 key={index}
                 data-aos="flip-right"
-                className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[300px] 2xl:h-[300px] w-[150px] h-[150px] transform transition duration-300 hover:scale-105 hover:shadow-cyan-400"
+                className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[300px] 2xl:h-[300px] w-[350px] h-[350px] transform transition duration-300 hover:scale-105 hover:shadow-cyan-400"
               >
                 <Image
                   src={card.img}
@@ -120,8 +120,8 @@ const Services = () => {
                   height={350}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute 2xl:bottom-9 bottom-3 justtify-center items-center w-full text-center px-4">
-      <h3 className="text-white w-full text-[12px] md:text-xl lg:text-[22px] font-bold ">
+                <div className="absolute bottom-9 justtify-center items-center w-full text-center px-4">
+      <h3 className="text-white w-full text-lg md:text-xl lg:text-[22px] font-bold ">
         {card.title}
       </h3>
     </div>
