@@ -264,7 +264,7 @@ const Hero = () => {
           href="https://wa.link/jkjtnj"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 md:px-8 md:py-4 bg-secondary text-white font-semibold rounded-full hover:bg-hover transition duration-300 mt-5 md:mt-10 opacity-0"
+          className="px-6 py-3 md:px-8 md:py-4 bg-secondary text-white font-semibold rounded-full hover:bg-hover transition duration-300 mt-5 md:mt-10 opacity-0 cursor-custom nav-link"
           style={{
             animation: "slide-up 1.5s ease-out forwards",
             animationDelay: "2.0s",

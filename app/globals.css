@@ -8,7 +8,7 @@ body {
 }
 
 button {
-  cursor: url('/Click.png'),
+  cursor: url('/Click.png'), auto;
 }
 
 a.cursor-custom {
