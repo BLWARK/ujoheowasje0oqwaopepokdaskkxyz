@@ -8,15 +8,15 @@ body {
 }
 
 button {
-  cursor: url('/Click.png'), auto;
+  cursor: url('/Click.png'),
 }
 
 a.cursor-custom {
-  cursor: url('/Click.png'), auto !important;
+  cursor: url('/Click.png'),
 }
 
 .nav-link {
-  cursor: url('/CLick.png'), auto;
+  cursor: url('/CLick.png'), 
 }
 
 
