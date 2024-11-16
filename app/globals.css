@@ -4,6 +4,19 @@
 
 body {
   color: #fff ; /* Gunakan kelas bg-main dari Tailwind */
+  cursor: url('/cursor1.png'), auto;
+}
+
+button {
+  cursor: url('/Click.png'), pointer;
+}
+
+a {
+  cursor: url('/Click.png'), pointer;
+}
+
+.nav-link {
+  cursor: url('/CLick.png'), auto;
 }
 
 
