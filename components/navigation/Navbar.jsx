@@ -59,7 +59,7 @@ const Navbar = () => {
           {/* Menu Items */}
           <div className="flex flex-col 2xl:flex-row items-center justify-start  2xl:gap-28 pt-0 2xl:pt-0 gap-10 2xl:-mt-0  ">
             <Link href="/" passHref>
-            <div className="logo text-green-500 font-bold text-[24px] 2xl:hidden flex justify-start nav-link cursor-pointer">
+            <div className="logo text-green-500 font-bold text-[24px] 2xl:hidden flex justify-start nav-link">
             <Image
                 src="/xyz-logo.png"
                 alt="Logo"
@@ -73,7 +73,7 @@ const Navbar = () => {
 
             {/* Home dengan routing ke halaman utama */}
             <Link href="/" passHref>
-              <div className="navbar py-2 2xl:py-0 cursor-pointer text-white hover:text-[#D4365F] transition duration-300 nav-link ">
+              <div className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link ">
                 Home
               </div>
             </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
             {/* About us dengan scroll ke div sect-3 */}
             <div
               onClick={() => scrollToSection("About")}
-              className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link cursor-pointer"
+              className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link "
             >
               About Us
             </div>
@@ -89,27 +89,27 @@ const Navbar = () => {
             {/* Service dengan scroll ke div content-service */}
             <div
               onClick={() => scrollToSection("Pillar")}
-              className="navbar py-2 2xl:py-0 cursor-pointer text-white hover:text-[#D4365F] transition duration-300 nav-link"
+              className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link"
             >
               Our Pillars
             </div>
             <div
               onClick={() => scrollToSection("Services")}
-              className="navbar py-2 2xl:py-0 cursor-pointer text-white hover:text-[#D4365F] transition duration-300 nav-link"
+              className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link"
             >
               Our Services
             </div>
 
             <div
               onClick={() => scrollToSection("Client")}
-              className="navbar py-2 2xl:py-0 cursor-pointer text-white hover:text-[#D4365F] transition duration-300 nav-link"
+              className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link"
             >
               Our client
             </div>
 
             <div
               onClick={() => scrollToSection("Teams")}
-              className="navbar py-2 2xl:py-0 cursor-pointer text-white hover:text-[#D4365F] transition duration-300 nav-link"
+              className="navbar py-2 2xl:py-0  text-white hover:text-[#D4365F] transition duration-300 nav-link"
             >
               Teams
             </div>

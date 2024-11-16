@@ -8,11 +8,11 @@ body {
 }
 
 button {
-  cursor: url('/Click.png'), pointer;
+  cursor: url('/Click.png'), auto;
 }
 
 a {
-  cursor: url('/Click.png'), pointer;
+  cursor: url('/Click.png'), auto;
 }
 
 .nav-link {

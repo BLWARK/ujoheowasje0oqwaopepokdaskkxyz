@@ -51,42 +51,42 @@ const Footer = () => {
           <div className="Logo text-white font-bold text-[18px] 2xl:text-[22px]">XYZ Creative Group</div>
           <div
             onClick={() => scrollToSection("home")}
-            className="contact mt-3 flex justify-start items-center gap-4 cursor-pointer nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Home</div>
           </div>
           <div
             onClick={() => scrollToSection("About")}
-            className="contact mt-3 flex justify-start items-center gap-4 cursor-pointer nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">About Us</div>
           </div>
           <div
             onClick={() => scrollToSection("Pillar")}
-            className="contact mt-3 flex justify-start items-center gap-4 cursor-pointer nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Our Pillars</div>
           </div>
           <div
             onClick={() => scrollToSection("Services")}
-            className="contact mt-3 flex justify-start items-center gap-4 cursor-pointer nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Our Services</div>
           </div>
           <div
             onClick={() => scrollToSection("Client")}
-            className="contact mt-3 flex justify-start items-center gap-4 cursor-pointer nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Our Client</div>
           </div>
           <div
             onClick={() => scrollToSection("Teams")}
-            className="contact mt-3 flex justify-start items-center gap-4 cursor-pointer nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Teams</div>
