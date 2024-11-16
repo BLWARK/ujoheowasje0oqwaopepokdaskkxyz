@@ -62,7 +62,7 @@ const AboutUs = () => {
         style={getTransformStyle(150, -100, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/cube1.png"
+          src="/Cube1.png"
           alt="Hero Image"
           width={50}
           height={50}
@@ -75,7 +75,7 @@ const AboutUs = () => {
         style={getTransformStyle(100, -80, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/cube1.png"
+          src="/Cube1.png"
           alt="Hero Image"
           width={100}
           height={100}
@@ -210,7 +210,7 @@ const AboutUs = () => {
         style={getTransformStyle(20, 100, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/cube1.png"
+          src="/Cube1.png"
           alt="Hero Image"
           width={30}
           height={30}
@@ -223,7 +223,7 @@ const AboutUs = () => {
         style={getTransformStyle( 0, 150, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/cube1.png"
+          src="/Cube1.png"
           alt="Hero Image"
           width={50}
           height={50}
