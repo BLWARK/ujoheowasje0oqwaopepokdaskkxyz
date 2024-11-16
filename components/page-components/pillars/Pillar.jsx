@@ -1,8 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
-import Image from "next/image";
-import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaArrowRight } from "react-icons/fa";
