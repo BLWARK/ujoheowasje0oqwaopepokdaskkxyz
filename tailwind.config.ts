@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      cursor: {
+        custom: "url('/Click.png'), auto",
+      },
       colors: {
         main: "#19104b",        // Warna utama
         secondary: "#6BCCDD",    // Warna sekunder

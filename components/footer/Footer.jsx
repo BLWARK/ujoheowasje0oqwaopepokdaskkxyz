@@ -52,7 +52,7 @@ const Footer = () => {
           <div
           role="button"
             onClick={() => scrollToSection("home")}
-            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link cursor-custom"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Home</div>
@@ -60,7 +60,7 @@ const Footer = () => {
           <div
           role="button"
             onClick={() => scrollToSection("About")}
-            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link cursor-custom"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">About Us</div>
@@ -68,7 +68,7 @@ const Footer = () => {
           <div
           role="button"
             onClick={() => scrollToSection("Pillar")}
-            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link cursor-custom"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Our Pillars</div>
@@ -76,7 +76,7 @@ const Footer = () => {
           <div
           role="button"
             onClick={() => scrollToSection("Services")}
-            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link cursor-custom"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Our Services</div>
@@ -84,7 +84,7 @@ const Footer = () => {
           <div
           role="button"
             onClick={() => scrollToSection("Client")}
-            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link cursor-custom"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Our Client</div>
@@ -92,7 +92,7 @@ const Footer = () => {
           <div
           role="button"
             onClick={() => scrollToSection("Teams")}
-            className="contact mt-3 flex justify-start items-center gap-4  nav-link"
+            className="contact mt-3 flex justify-start items-center gap-4  nav-link cursor-custom"
           >
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">Teams</div>
