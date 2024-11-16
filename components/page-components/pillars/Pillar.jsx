@@ -15,7 +15,10 @@ const Pillar = () => {
   }, []);
 
   return (
-    <div id="Pillar" className="Our-pillar-sec w-full 2xl:h-full flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col justify-center items-center 2xl:px-20 px-5 md:py-[100px] py-[20px] bg-gradient-to-b from-purple-950 to-purple-700">
+    <div
+      id="Pillar"
+      className="Our-pillar-sec w-full 2xl:h-full flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col justify-center items-center 2xl:px-20 px-5 md:py-[100px] py-[20px] bg-gradient-to-b from-purple-950 to-purple-700"
+    >
       <div
         data-aos="fade-left"
         className="relative top w-full flex justify-center items-center"
@@ -46,7 +49,7 @@ const Pillar = () => {
             >
               <Image
                 src="/Event.webp"
-                alt="Anxiety"
+                alt="Event"
                 width={400}
                 height={300}
                 className="object-cover w-full h-[300px]"
@@ -59,11 +62,10 @@ const Pillar = () => {
                   Our Event and Production division brings ideas to life. From
                   conceptualization to execution, this division handles
                   everything, ensuring every event, large or small, meets the
-                  highest standards and captures the intended audience's
+                  highest standards and captures the intended audience&#39;s
                   imagination.
                 </p>
               </div>
-              {/* Overlay and Button */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                 <button className="text-white bg-secondary py-4 px-6 rounded-full flex items-center gap-2 font-semibold">
                   See More <FaArrowRight />
@@ -78,7 +80,7 @@ const Pillar = () => {
             >
               <Image
                 src="/Legal.webp"
-                alt="Anxiety"
+                alt="Legal"
                 width={400}
                 height={300}
                 className="object-cover w-full h-[300px]"
@@ -95,7 +97,6 @@ const Pillar = () => {
                   and their audiences effectively.
                 </p>
               </div>
-              {/* Overlay and Button */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                 <button className="text-white bg-secondary py-4 px-6 rounded-full flex items-center gap-2 font-semibold">
                   See More <FaArrowRight />
@@ -110,7 +111,7 @@ const Pillar = () => {
             >
               <Image
                 src="/Digital.webp"
-                alt="Anxiety"
+                alt="Digital Media Marketing"
                 width={400}
                 height={300}
                 className="object-cover w-full h-[300px]"
@@ -122,12 +123,9 @@ const Pillar = () => {
                 <p className="text-white mb-4 text-[12px] font-light">
                   Our Digital Media Marketing division is at the forefront of
                   the digital space. We drive impactful campaigns that engage,
-                  inspire, and grow audiences across digital platforms,
-                  leveraging cutting-edge strategies to maximize visibility and
-                  engagement for brands.
+                  inspire, and grow audiences across digital platforms.
                 </p>
               </div>
-              {/* Overlay and Button */}
               <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                 <button className="text-white bg-secondary py-4 px-6 rounded-full flex items-center gap-2 font-semibold">
                   See More <FaArrowRight />
