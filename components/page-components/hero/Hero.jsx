@@ -229,28 +229,29 @@ const Hero = () => {
       {/* Title and CTA Button */}
       <div className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10">
         <Image
-          src="/xyz-logo.png"
+          src="/XYZ ONLY.png"
           alt="Hero Image"
           width={300}
           height={300}
           priority={true}
-          className="2xl:w-[20%] w-[50%]"
+          className="2xl:w-[10%] w-[20%]"
           style={{
             animation: "slide-up 1.5s ease-out forwards",
             animationDelay: "0.5s",
           }}
         />
         <h1
-          className="w-full 2xl:text-[96px] text-[32px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
+          className="w-full 2xl:text-[106px] text-[32px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
           style={{
             animation: "slide-up 1.5s ease-out forwards",
             animationDelay: "1.0s",
           }}
         >
-          XYZ CREATIVE GROUP
+          
+          CREATIVE GROUP
         </h1>
         <p
-          className="w-full 2xl:text-[38px] text-[14px] md:text-[16px] font-medium text-white opacity-0"
+          className="w-full 2xl:text-[32px] text-[14px] md:text-[16px] font-medium text-white opacity-0"
           style={{
             animation: "slide-up 1.5s ease-out forwards",
             animationDelay: "1.5s",
