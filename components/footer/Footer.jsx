@@ -50,6 +50,7 @@ const Footer = () => {
         <div className="foot-sec2 px-10 py-10 2xl:px-20 2xl:py-20 w-full 2xl:w-[25%] flex flex-col justify-start items-start gap-3">
           <div className="Logo text-white font-bold text-[18px] 2xl:text-[22px]">XYZ Creative Group</div>
           <div
+          role="button"
             onClick={() => scrollToSection("home")}
             className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
@@ -57,6 +58,7 @@ const Footer = () => {
             <div className="contact font-bold text-white">Home</div>
           </div>
           <div
+          role="button"
             onClick={() => scrollToSection("About")}
             className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
@@ -64,6 +66,7 @@ const Footer = () => {
             <div className="contact font-bold text-white">About Us</div>
           </div>
           <div
+          role="button"
             onClick={() => scrollToSection("Pillar")}
             className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
@@ -71,6 +74,7 @@ const Footer = () => {
             <div className="contact font-bold text-white">Our Pillars</div>
           </div>
           <div
+          role="button"
             onClick={() => scrollToSection("Services")}
             className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
@@ -78,6 +82,7 @@ const Footer = () => {
             <div className="contact font-bold text-white">Our Services</div>
           </div>
           <div
+          role="button"
             onClick={() => scrollToSection("Client")}
             className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
@@ -85,6 +90,7 @@ const Footer = () => {
             <div className="contact font-bold text-white">Our Client</div>
           </div>
           <div
+          role="button"
             onClick={() => scrollToSection("Teams")}
             className="contact mt-3 flex justify-start items-center gap-4  nav-link"
           >
