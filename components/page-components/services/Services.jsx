@@ -15,67 +15,67 @@ const Services = () => {
 
   const cards = [
     {
-      img: "/Brand.png",
+      img: "/1.jpg",
       title: "Brand Communication",
       description:
         "Through strategic brand communication, we ensure your voice is heard, understood, and remembered, driving engagement and fostering brand loyalty.",
     },
     {
-      img: "/Media.png",
+      img: "/2.jpg",
       title: "Media Placement",
       description:
         "With our deep industry insights and strong media relationships, we place your brand where it matters most, ensuring optimal exposure and audience engagement.",
     },
     {
-      img: "/Media Plan.png",
+      img: "/3.jpg",
       title: "Media Plan",
       description:
         "Whether you're launching a new product or increasing brand awareness, our media plans are crafted to meet your unique business objectives and drive results.",
     },
     {
-      img: "/Social Media M.png",
+      img: "/4.jpg",
       title: "Social Media Management",
       description:
         "With a deep understanding of your audience, we design and manage social media campaigns that spark conversation, foster community, and drive measurable results.",
     },
     {
-      img: "/Content Production.png",
+      img: "/5.jpg",
       title: "Content Production",
       description:
         "We produce content that not only looks great but also drives action. Whether it’s videos, blogs, or social media posts, our content connects with your audience and achieves your goals.",
     },
     {
-      img: "/KOL.png",
+      img: "/6.jpg",
       title: "Key Opinion Leaders",
       description:
         "Leverage the influence of industry leaders to elevate your brand’s message. We connect your brand with the right KOLs to boost credibility and reach a wider audience.",
     },
     {
-      img: "/Event Production.png",
+      img: "/7.jpg",
       title: "Event and Production",
       description:
         "Our Event and Production division brings ideas to life. From conceptualization to execution, this division handles everything, ensuring every event, large or small, meets the highest standards and captures the intended audience's imagination.",
     },
     {
-      img: "/MCN.png",
+      img: "/8.jpg",
       title: "Multi Channel Network",
       description:
         "With our extensive network of digital platforms and content creators, we ensure your brand’s presence is felt across multiple touchpoints, driving engagement and growth.",
     },
     {
-      img: "/Web3.png",
+      img: "/9.jpg",
       title: "Web 3.0 Development",
       description:
         "XYZ Creative Group leverages the power of Web3 to deliver innovative solutions in blockchain, cryptocurrency, and decentralized applications that enhance user engagement and security.",
     },
     {
-      img: "/NFT LISTING.png",
+      img: "/10.jpg",
       title: "NFT Listing",
       description:
         "From art to collectibles, we guide you through the process of listing your NFTs, maximizing exposure and sales potential across leading platforms.",
     },
     {
-      img: "/B2B.png",
+      img: "/11.jpg",
       title: "Business to Business",
       description:
         "XYZ Creative Group specializes in providing innovative B2B services that enhance operational efficiency, foster partnerships, and drive business growth.",
@@ -106,12 +106,12 @@ const Services = () => {
             your vision to life.
           </p>
 
-          <div className="grid gap-10 py-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-items-center mt-10 px-5">
+          <div className="grid gap-10 py-10 grid-cols-2 md:grid-cols-2 xl:grid-cols-4 justify-items-center mt-10 px-5">
             {cards.map((card, index) => (
               <div
                 key={index}
                 data-aos="flip-right"
-                className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[300px] 2xl:h-[300px] w-[350px] h-[350px] transform transition duration-300 hover:scale-105 hover:shadow-cyan-400"
+                className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[300px] 2xl:h-[300px] w-[150px] h-[150px] transform transition duration-300 hover:scale-105 hover:shadow-cyan-400"
               >
                 <Image
                   src={card.img}
@@ -120,6 +120,11 @@ const Services = () => {
                   height={350}
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute 2xl:bottom-9 bottom-3 justtify-center items-center w-full text-center px-4">
+      <h3 className="text-white w-full text-[12px] md:text-xl lg:text-[22px] font-bold ">
+        {card.title}
+      </h3>
+    </div>
                 <div className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                   <div className="p-5">
                     <h2 className="text-xl font-bold mb-2 text-secondary">

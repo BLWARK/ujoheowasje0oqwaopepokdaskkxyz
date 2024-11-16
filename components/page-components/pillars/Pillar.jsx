@@ -48,7 +48,7 @@ const Pillar = () => {
               className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[400px] w-[350px] h-[500px] transform transition duration-300 hover:scale-105 hover:shadow-purple-300/80"
             >
               <Image
-                src="/Event.webp"
+                src="/Event.jpg"
                 alt="Event"
                 width={400}
                 height={300}
@@ -79,7 +79,7 @@ const Pillar = () => {
               className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[400px] w-[350px] h-[500px] transform transition duration-300 hover:scale-105 hover:shadow-purple-300/80"
             >
               <Image
-                src="/Legal.webp"
+                src="/Legal.jpg"
                 alt="Legal"
                 width={400}
                 height={300}
@@ -110,7 +110,7 @@ const Pillar = () => {
               className="relative bg-gradient-to-tr from-purple-950 to-purple-400 rounded-3xl shadow-lg overflow-hidden 2xl:w-[400px] w-[350px] h-[500px] transform transition duration-300 hover:scale-105 hover:shadow-purple-300/80"
             >
               <Image
-                src="/Digital.webp"
+                src="/Digital.jpg"
                 alt="Digital Media Marketing"
                 width={400}
                 height={300}
