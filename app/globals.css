@@ -2,20 +2,157 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  color: #fff ; /* Gunakan kelas bg-main dari Tailwind */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.slider {
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 16); /* Total width: 8 original slides + 8 duplicate slides */
+  animation: scroll 20s linear infinite; /* Animasi infinite */
+}
+
+.slide {
+  width: 250px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Mulai dari posisi awal */
+  }
+  100% {
+    transform: translateX(-50%); /* Geser setengah dari lebar total */
+  }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.hover-scale-effect {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale-effect:hover {
+  transform: scale(1.05);
+}
+
+/* Animasi fade */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Class untuk elemen yang akan di-fade */
+.fade-animation {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animasi slide */
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Class untuk elemen yang akan di-slide */
+.slide-animation {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+/* Animasi smooth untuk fade dan translate */
+@keyframes smoothFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes smoothFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+/* Class untuk animasi masuk */
+.fade-in-animation {
+  animation: smoothFadeIn 0.5s ease-in-out;
+}
+
+/* Class untuk animasi keluar */
+.fade-out-animation {
+  animation: smoothFadeOut 0.5s ease-in-out;
 }
