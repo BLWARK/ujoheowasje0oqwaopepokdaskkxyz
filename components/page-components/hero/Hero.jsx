@@ -32,7 +32,7 @@ const Hero = () => {
   });
 
   return (
-    <div id="home" className="Hero relative w-full h-screen md:h-screen mt-40" data-aos="fade-up">
+    <div id="home" className="Hero relative w-full h-screen md:h-screen " data-aos="fade-up">
       {/* Background Video */}
       <video
         autoPlay
