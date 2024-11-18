@@ -125,7 +125,7 @@ const Legal = () => {
                 </span>{" "}
                 We handle cases related to breach of contract, business
                 disputes, and property issues, with the goal of protecting our
-                clients' rights and ensuring fair and just resolutions.
+                clients rights and ensuring fair and just resolutions.
               </li>
               <li>
                 <span className="font-bold text-secondary">
@@ -147,7 +147,7 @@ const Legal = () => {
                 </span>{" "}
                 We offer strong legal protection against copyright infringement,
                 trademark violations, and patent issues, ensuring that our
-                clients' intellectual property is safeguarded from misuse or
+                clients intellectual property is safeguarded from misuse or
                 infringement.
               </li>
               <li>
@@ -205,11 +205,11 @@ const Legal = () => {
               <ul className=" list-disc px-5  text-white">
                 <li className="text-white">
                   We provide registration services for trademarks, copyrights,
-                  patents, and industrial designs, ensuring that clients'
+                  patents, and industrial designs, ensuring that clients
                   products and innovations are protected.
                 </li>
                 <li>
-                  We also offer management services for clients' IP portfolios,
+                  We also offer management services for clients IP portfolios,
                   ensuring that all intellectual property assets are properly
                   protected and in compliance with applicable laws.
                 </li>
@@ -306,7 +306,7 @@ const Legal = () => {
                 In addition to its use within the ecosystem, XYZMER Coin can be
                 traded on open markets. This feature adds real economic value
                 for users, who can trade, hold, or reinvest their coins as
-                needed, expanding the coin's utility beyond the platform itself.
+                needed, expanding the coins utility beyond the platform itself.
               </li>
             </ul>
             <p className="italic text-[14px]">
@@ -587,7 +587,7 @@ const Legal = () => {
                 every transaction, contract, and interaction within the
                 ecosystem runs smoothly and is protected. This cutting-edge
                 technology provides a competitive advantage and ensures the
-                platform's sustainability in the long run.
+                platforms sustainability in the long run.
               </li>
               <li>
                 <span className="font-bold text-secondary">
@@ -725,7 +725,7 @@ const Legal = () => {
               4. Web3-based Film Content Development
             </div>
             <p className="px-2 2xl:px-0">
-              As part of PT BEKI's commitment to adopting the latest technology,
+              As part of PT BEKI&apos;s commitment to adopting the latest technology,
               we are also developing film content integrated with Web3
               technology. This allows the distribution and purchase of film
               copyrights through NFTs (Non-Fungible Tokens), creating new

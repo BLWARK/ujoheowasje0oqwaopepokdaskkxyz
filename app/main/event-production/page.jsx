@@ -176,7 +176,7 @@ const Event = () => {
                 </span>{" "}
                 We assist clients in creating event strategies and concepts
                 tailored to their specific goals and budgets. This process
-                includes in-depth discussions to understand the client's vision,
+                includes in-depth discussions to understand the client&apos;s vision,
                 selecting the right theme, and designing every detail of the
                 event to deliver a unique and memorable experience.
               </li>

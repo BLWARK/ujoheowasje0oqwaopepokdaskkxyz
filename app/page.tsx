@@ -10,7 +10,6 @@ import Services from "@/components/page-components/services/Services";
 import Client from "@/components/page-components/client/Client";
 import Project from "@/components/page-components/project/Project";
 import Teams from "@/components/page-components/teams/Teams";
-import { usePathname } from "next/navigation";
 
 const Page = () => {
   
