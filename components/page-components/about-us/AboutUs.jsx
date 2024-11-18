@@ -31,14 +31,14 @@ const AboutUs = () => {
       
   return (
     <div id="About" className=" about-us-sect w-full 2xl:h-[1000px] flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col justify-center items-center 2xl:px-20 px-5 2xl:py-[20px] md:py-[100px] py-[100px] bg-gradient-to-b from-blue-950 to-blue-600 ">
-    <Image
+    {/* <Image
         src="/Grid1.png"
         alt="Hero Image"
         width={1920}
         height={500}
         className="object-cover absolute 2xl:block hidden" // Gunakan CSS untuk object-fit
         priority={true}
-      />
+      /> */}
        {/* <Image
         src="/Grid1.png"
         alt="Hero Image"

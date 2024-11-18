@@ -22,12 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-      <div className="relative overflow-hidden">
-          <Navbar  />
+      <div className="relative overflow-hidden bg-gray-700">
+      <Navbar  />
           
           {/* Hero Section */}
           <div className="relative " >
+          
             {children}
+           
           </div>
           <Footer  />
         </div>
