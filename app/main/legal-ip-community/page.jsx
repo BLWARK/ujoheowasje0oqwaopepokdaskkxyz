@@ -15,7 +15,7 @@ const Legal = () => {
   }, []);
 
   const [selectedBox, setSelectedBox] = useState(0);
-  const [selectedVideo, setSelectedVideo] = useState(null);
+  
 
   const handleBoxClick = (boxIndex) => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik

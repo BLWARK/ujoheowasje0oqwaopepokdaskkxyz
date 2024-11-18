@@ -13,7 +13,7 @@ import Teams from "@/components/page-components/teams/Teams";
 import { usePathname } from "next/navigation";
 
 const Page = () => {
-  const pathname = usePathname();
+  
 
   useEffect(() => {
     AOS.init({
