@@ -20,11 +20,24 @@ const Event = () => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik
   };
 
+   // Scroll to view ketika selectedBox berubah
+   useEffect(() => {
+    if (selectedBox !== null) {
+      const sectionIds = ["", "Event", "MICE", "Brand"]; // Mapping ID
+      const section = document.getElementById(sectionIds[selectedBox]);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+
+      }
+    }
+  }, [selectedBox]);
+  
+
   return (
-    <div className="relative w-full h-full bg-gray-900 text-white">
+    <div className="relative mx-auto overflow-hidden max-w-full w-full h-full bg-gray-900 text-white">
       {/* Hero Section */}
       <div
-        className="relative w-full h-[600px] 2xl:h-[600px]"
+        className="relative w-full h-[600px] 2xl:h-[750px]"
        
         
       >
@@ -37,28 +50,14 @@ const Event = () => {
         />
         <div className="absolute inset-0 bg-black opacity-80"></div>
 
-        <div data-aos="fade-up" className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-start items-center text-start text-white z-1 2xl:mt-[140px] mt-28">
+        <div data-aos="fade-up" className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-start items-center text-start text-white z-1 2xl:mt-[160px] mt-28">
           <p
             className="w-full text-secondary text-[26px] md:text-[48px] lg:text-[54px] font-bold py-4  text-center"
-           
-          >
+           >
             Event and Production
           </p>
 
-          {/* <p
-            className="w-full md:w-[80%] lg:w-[60%] text-[14px] md:text-[24px] font-light text-white opacity-0 text-center"
-            style={{
-              animation: "slide-up 1s ease-out forwards",
-              animationDelay: "1s",
-            }}
-          >
-            PT Bisnis Ekosistem Kreatif Indonesia (PT BEKI), through its Event &
-            Production division, delivers comprehensive solutions for event
-            management and brand activation. We support clients in organizing
-            events of all scales while enhancing brand awareness through
-            innovation.
-          </p> */}
-          <div data-aos="fade-up" className="relative grid grid-cols-2 2xl:grid-cols-4 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center">
+          <div data-aos="fade-up" className="relative grid grid-cols-2 2xl:grid-cols-4 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5 max-w-full 2xl:mt-20   place-items-center">
             {[
               { img: "/1.jpg", title: "Production" },
               { img: "/1.jpg", title: "Event Management" },
@@ -70,7 +69,7 @@ const Event = () => {
                 
                 className={`w-[150px] h-[150px] 2xl:h-[300px] 2xl:w-[300px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
                   selectedBox === index
-                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-110"
+                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-105"
                     : "bg-gray-700 hover:border-secondary  hover:border-4 hover:scale-105"
                 } transition-all duration-300`}
                 onClick={() => handleBoxClick(index)}
@@ -99,9 +98,9 @@ const Event = () => {
       {/* Section Kotak di Tengah */}
 
       {/* Konten Dinamis */}
-      <div data-aos="fade-up" className="relative dynamic-content w-full 2xl:px-40  px-5 2xl:mt-20 pb-  mt-10">
+      <div data-aos="fade-up" className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-0 2xl:mt-20  mt-10 max-w-full text-left">
         {selectedBox === 0 && (
-          <div id="Production"  key={selectedBox}  data-aos="fade-left"   >
+          <div id="Production"  key={selectedBox}  data-aos="fade-left" className="2xl:w-full w-full 2xl:px-0 px-5 overflow-hidden "   >
             <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[44px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               Production
             </h2>
@@ -116,7 +115,7 @@ const Event = () => {
               Main Services
             </p>
 
-            <ul className="list-disc list-outside 2xl:px-10 px-5 py-5 marker:text-hover flex flex-col gap-4">
+            <ul className="list-disc list-outside 2xl:px-10 px-3 py-5 marker:text-hover flex flex-col gap-4">
               <li>
                 <span className="font-bold text-secondary">
                   Content Creation:
@@ -150,7 +149,7 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="Event"  key={selectedBox}  data-aos="fade-left"  >
+          <div id="Event"  key={selectedBox}  data-aos="fade-left" className="relative 2xl:w-full w-full 2xl:px-0 px-10 max-w-full overflow-hidden " >
             <h2 className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
               Event Management
             </h2>
@@ -169,7 +168,7 @@ const Event = () => {
               Main Services
             </p>
 
-            <ul className="list-disc list-outside 2xl:px-10 px-5 py-5 marker:text-hover flex flex-col gap-4">
+            <ul className="list-disc list-outside 2xl:px-10 px-0 py-5 marker:text-hover flex flex-col gap-4 max-w-full">
               <li>
                 <span className="font-bold text-secondary">
                   Event Planning:
@@ -215,7 +214,7 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 2 && (
-          <div  id="MICE" key={selectedBox}  data-aos="fade-left">
+          <div  id="MICE" key={selectedBox}  data-aos="fade-left" className="2xl:w-full w-full 2xl:px-0 px-5 overflow-hidden ">
             <h2 className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] font-bold py-5">
               MICE (Meetings, Incentives, Conferences, and Exhibitions)
             </h2>
@@ -282,7 +281,7 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 3 && (
-          <div  id="Event"  key={selectedBox}  data-aos="fade-left"  
+          <div  id="Brand"  key={selectedBox}  data-aos="fade-left" className="2xl:w-full w-full 2xl:px-0 px-5 overflow-hidden " 
           >
             <h2  className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
               Brand Activation

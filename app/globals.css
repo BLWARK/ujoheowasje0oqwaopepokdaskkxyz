@@ -5,6 +5,8 @@
 body {
   color: #fff ; /* Gunakan kelas bg-main dari Tailwind */
   cursor: url('/cursor1.png'), auto;
+  
+  
 }
 
 button {

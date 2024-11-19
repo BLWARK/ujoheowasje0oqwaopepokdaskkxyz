@@ -4,6 +4,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CardPillar from "@/components/card/Card-pillar";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Legal = () => {
   useEffect(() => {
@@ -15,16 +16,25 @@ const Legal = () => {
   }, []);
 
   const [selectedBox, setSelectedBox] = useState(0);
-  
 
   const handleBoxClick = (boxIndex) => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik
   };
 
+  useEffect(() => {
+    if (selectedBox !== null) {
+      const sectionIds = ["", "Crypto", "Podcast", "FILM", "Community"]; // Mapping ID
+      const section = document.getElementById(sectionIds[selectedBox]);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [selectedBox]);
+
   return (
     <div className="relative w-full h-full bg-gray-900 text-white">
       {/* Hero Section */}
-      <div className="relative w-full h-[600px] 2xl:h-[600px]">
+      <div className="relative w-full h-[600px] 2xl:h-[750px]">
         <Image
           src="/Legal.jpg"
           alt="Hero Image"
@@ -36,7 +46,7 @@ const Legal = () => {
 
         <div
           data-aos="fade-up"
-          className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-start items-center text-start text-white z-1 2xl:mt-[140px] mt-28"
+          className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-start items-center text-start text-white z-1 2xl:mt-[160px] mt-28"
         >
           <p className="w-full text-secondary text-[26px] md:text-[48px] lg:text-[54px] font-bold py-4  text-center">
             Legal IP and Community
@@ -82,12 +92,10 @@ const Legal = () => {
         </div>
       </div>
 
-      {/* Section Kotak di Tengah */}
-
       {/* Konten Dinamis */}
       <div
         data-aos="fade-up"
-        className="relative dynamic-content w-full 2xl:px-40  px-5 2xl:mt-10   mt-48"
+        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-6 2xl:mt-20  mt-48 max-w-full text-left"
       >
         {selectedBox === 0 && (
           <div id="Law Firm" key={selectedBox} data-aos="fade-left">
@@ -215,8 +223,6 @@ const Legal = () => {
                 </li>
               </ul>
 
-              
-
               <li className="text-secondary font-bold">
                 {" "}
                 Corporate Legal Compliance:
@@ -254,8 +260,8 @@ const Legal = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="Crypto" key={selectedBox} data-aos="fade-left">
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+          <div id="Crypto"  key={selectedBox} data-aos="fade-left">
+            <h2  className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               XYZ Crypto Universe
             </h2>
             <p>
@@ -309,13 +315,22 @@ const Legal = () => {
                 needed, expanding the coins utility beyond the platform itself.
               </li>
             </ul>
-            <p className="italic text-[14px]">
+            <p className="italic text-[14px] mb-5">
               The XYZMER Coin smart contract has undergone a thorough audit and
               is confirmed to be secure for use. According to the development
               plan, XYZMER Coin will begin active trading on open markets
               starting in Q1 2025, offering new opportunities for users and
               investors to participate in this dynamic ecosystem.
             </p>
+            <a
+              href="https://xyzmercoin.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary font-bold mt-8 italic underline flex items-center gap-2 cursor-custom nav-link"
+            >
+              Visit XYZMER Coin Website
+              <AiOutlineArrowRight className="text-lg font-bold" />
+            </a>
 
             <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
             <div className="2xl:px-0 px-2 py-2 mt-10 marker:text-hover flex flex-col gap-4 font-bold text-secondary text-[24px]">
@@ -356,6 +371,16 @@ const Legal = () => {
                 peace of mind for both creators and collectors.
               </li>
             </ul>
+
+            <a
+              href="https://xyznt.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary font-bold mt-8 italic underline flex items-center gap-2 cursor-custom nav-link"
+            >
+              Visit XYZNT.io Website
+              <AiOutlineArrowRight className="text-lg font-bold" />
+            </a>
             <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
 
             <div className="2xl:px-0 px-2 py-2 mt-10 marker:text-hover flex flex-col gap-4 font-bold text-secondary text-[24px]">
@@ -619,7 +644,7 @@ const Legal = () => {
             <p className="text-secondary text-[26px]  2xl:text-[28px] font-bold mt-10 ">
               Main Services
             </p>
-            
+
             <div className="2xl:px-0 px-2 py-2 mt-5 marker:text-hover flex flex-col gap-4 font-bold text-secondary text-[24px]">
               1. Film Production
             </div>
@@ -725,9 +750,9 @@ const Legal = () => {
               4. Web3-based Film Content Development
             </div>
             <p className="px-2 2xl:px-0">
-              As part of PT BEKI&apos;s commitment to adopting the latest technology,
-              we are also developing film content integrated with Web3
-              technology. This allows the distribution and purchase of film
+              As part of PT BEKI&apos;s commitment to adopting the latest
+              technology, we are also developing film content integrated with
+              Web3 technology. This allows the distribution and purchase of film
               copyrights through NFTs (Non-Fungible Tokens), creating new
               opportunities in the film industry with a more transparent and
               decentralized ecosystem. This technology offers a new way to build
@@ -774,6 +799,7 @@ const Legal = () => {
             data-aos="fade-left"
             className="relative w-full"
           >
+            <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 my-10"></div>
             <h2 className="text-secondary text-[28px] md:text-[48px] lg:text-[64px] py-5 font-bold">
               Podcast
             </h2>
@@ -784,7 +810,7 @@ const Legal = () => {
               topics supported by local communities, providing a space for
               audiences to discuss and share insights.
             </p>
-            <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 my-10"></div>
+            
 
             {/* Kontainer untuk kotak-kotak YouTube */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-5 md:px-10">
@@ -931,6 +957,16 @@ const Legal = () => {
               </li>
             </ul>
 
+            <a
+              href="https://t.me/loungecryptohell"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary font-bold mt-8 italic underline flex items-center gap-2 cursor-custom nav-link"
+            >
+              Visit CryptoHell Telegram
+              <AiOutlineArrowRight className="text-lg font-bold" />
+            </a>
+
             <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
 
             <div className="2xl:px-0 px-2 py-2 mt-5 marker:text-hover flex flex-col gap-4 font-bold text-secondary text-[24px]">
@@ -964,6 +1000,15 @@ const Legal = () => {
                 as part of their promotion efforts.
               </li>
             </ul>
+            <a
+              href="https://t.me/airdrophans"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary font-bold mt-8 italic underline flex items-center gap-2 cursor-custom nav-link"
+            >
+              Visit Airdrophans Telegram
+              <AiOutlineArrowRight className="text-lg font-bold" />
+            </a>
             <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
 
             <div className="2xl:px-0 px-2 py-2 mt-5 marker:text-hover flex flex-col gap-4 font-bold text-secondary text-[24px]">
@@ -1011,6 +1056,7 @@ const Legal = () => {
           </div>
         )}
         <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
+        
       </div>
 
       <div className="2xl:w-full flex justify-center items-center">

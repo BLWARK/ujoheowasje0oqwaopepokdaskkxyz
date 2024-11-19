@@ -92,7 +92,7 @@ const Services = () => {
         className="relative w-full flex justify-center items-center"
       >
         <div className="content flex flex-col md:justify-center md:items-center 2xl:justify-center 2xl:items-center justify-start items-start">
-          <p className="w-full flex 2xl:justify-center 2xl:items-center justify-start items-start 2xl:text-[28px] text-[20px] text-secondary font-bold 2xl:mt-10 mt-10">
+          <p className="w-full flex 2xl:justify-center 2xl:items-center xl:justify-center justify-start items-start 2xl:text-[28px] text-[20px] text-secondary font-bold 2xl:mt-10 mt-10">
             Our Services
           </p>
           <div className="w-[100px] h-[5px] bg-hover rounded-full my-5"></div>
@@ -106,7 +106,7 @@ const Services = () => {
             your vision to life.
           </p>
 
-          <div className="grid gap-10 py-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-items-center mt-10 px-5">
+          <div className="grid gap-10 py-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center mt-10 px-5">
             {cards.map((card, index) => (
               <div
                 key={index}

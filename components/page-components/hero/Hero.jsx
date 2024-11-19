@@ -55,7 +55,7 @@ const Hero = () => {
       {/* Floating Images with Parallax Effect */}
       {/* Desktop */}
       <div
-        className="relative w-full 2xl:block hidden"
+        className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden  hidden"
         style={getTransformStyle(1300, 600, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
@@ -69,7 +69,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="relative w-full 2xl:block hidden"
+        className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
         style={getTransformStyle(260, 200, 15, 15)} // Initial X: 260px, Y: 200px
       >
         <Image
@@ -82,7 +82,7 @@ const Hero = () => {
         />
       </div>
       <div
-        className="relative w-full 2xl:block hidden"
+        className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
         style={getTransformStyle(260, 400, 10, 10)} // Initial X: 260px, Y: 400px
       >
         <Image
@@ -95,7 +95,7 @@ const Hero = () => {
         />
       </div>
       <div
-        className="relative w-full 2xl:block hidden"
+        className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
         style={getTransformStyle(1400, -200, 20, 20)} // Initial X: 1400px, Y: -200px
       >
         <Image
@@ -109,6 +109,8 @@ const Hero = () => {
       </div>
 
 
+
+      
 
 
        {/* Mobile */}
