@@ -190,7 +190,7 @@ const Digital = () => {
             </h2>
             <p>
               Media Placement & Monitoring is a service designed to ensure that
-              clients' advertising campaigns reach the right audience through a
+              clients advertising campaigns reach the right audience through a
               variety of media channels, both traditional and digital. This
               service helps clients strategically place their ads to achieve
               maximum impact and connect with their desired target audience.
@@ -216,7 +216,7 @@ const Digital = () => {
                 </span>{" "}
                 We offer audio ad placement services on radio stations with wide
                 reach, targeting the audience demographics that match our
-                clients' needs. We ensure that the ads are heard by the
+                clients needs. We ensure that the ads are heard by the
                 appropriate listeners based on the desired profile.
               </li>
               <li>
@@ -431,7 +431,7 @@ const Digital = () => {
               strong and successful brand in the ever-evolving digital world. We
               integrate innovative and effective marketing strategies, from
               influencer marketing to social media management, ensuring that
-              clients' brands reach the right audience and achieve their
+              clients brands reach the right audience and achieve their
               business objectives with maximum results.
             </p>
           </div>
