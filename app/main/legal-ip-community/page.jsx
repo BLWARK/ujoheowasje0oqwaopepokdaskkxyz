@@ -21,15 +21,15 @@ const Legal = () => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik
   };
 
-  // useEffect(() => {
-  //   if (selectedBox !== null) {
-  //     const sectionIds = ["", "Crypto", "Podcast", "FILM", "Community"]; // Mapping ID
-  //     const section = document.getElementById(sectionIds[selectedBox]);
-  //     if (section) {
-  //       section.scrollIntoView({ behavior: "smooth", block: "start" });
-  //     }
-  //   }
-  // }, [selectedBox]);
+  useEffect(() => {
+    if (selectedBox !== null) {
+      const sectionIds = ["", "Crypto", "Podcast", "FILM", "Community"]; // Mapping ID
+      const section = document.getElementById(sectionIds[selectedBox]);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [selectedBox]);
 
   return (
     <div className="relative w-full h-full bg-gray-900 text-white">
@@ -98,8 +98,8 @@ const Legal = () => {
         className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-4 2xl:mt-5  mt-48 max-w-full text-left"
       >
         {selectedBox === 0 && (
-          <div id="Law Firm" key={selectedBox} data-aos="fade-left">
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+          <div  key={selectedBox} >
+            <h2 id="Law Firm" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               Law Firm
             </h2>
             <p>
@@ -260,8 +260,8 @@ const Legal = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="Crypto" key={selectedBox} data-aos="fade-left">
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+          <div  key={selectedBox} >
+            <h2 id="Crypto" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               XYZ Crypto Universe
             </h2>
             <p>
@@ -628,8 +628,8 @@ const Legal = () => {
           </div>
         )}
         {selectedBox === 3 && (
-          <div id="FILM" key={selectedBox} data-aos="fade-left">
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
+          <div  key={selectedBox} >
+            <h2 id="FILM" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
               FILM
             </h2>
             <p>
@@ -794,12 +794,12 @@ const Legal = () => {
         )}
         {selectedBox === 2 && (
           <div
-            id="Podcast"
+            
             key={selectedBox}
-            data-aos="fade-left"
+            
             className="relative w-full"
           >
-            <h2 className="text-secondary text-[28px] md:text-[48px] lg:text-[64px] py-5 font-bold">
+            <h2 id="Podcast" className="text-secondary text-[28px] md:text-[48px] lg:text-[64px] py-5 font-bold">
               Podcast
             </h2>
             <p className="text-white mb-10">
@@ -936,8 +936,8 @@ const Legal = () => {
           </div>
         )}
         {selectedBox === 4 && (
-          <div id="Community" key={selectedBox} data-aos="fade-left">
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
+          <div  key={selectedBox} >
+            <h2 id="Community" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
               Community
             </h2>
             <p>

@@ -21,15 +21,15 @@ const Digital = () => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik
   };
 
-  // useEffect(() => {
-  //   if (selectedBox !== null) {
-  //     const sectionIds = ["", "DOOH", "Rental", "Digital-Marketing"]; // Mapping ID
-  //     const section = document.getElementById(sectionIds[selectedBox]);
-  //     if (section) {
-  //       section.scrollIntoView({ behavior: "smooth", block: "start" });
-  //     }
-  //   }
-  // }, [selectedBox]);
+  useEffect(() => {
+    if (selectedBox !== null) {
+      const sectionIds = ["", "DOOH", "Rental", "Digital-Marketing"]; // Mapping ID
+      const section = document.getElementById(sectionIds[selectedBox]);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [selectedBox]);
 
   return (
     <div className="relative mx-auto overflow-hidden max-w-full w-full h-full bg-gray-900 text-white">
@@ -96,10 +96,10 @@ const Digital = () => {
       {/* Konten Dinamis */}
       <div
         data-aos="fade-up"
-        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-0 2xl:mt-20  mt-10 max-w-full text-left"
+        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-5 2xl:mt-20  mt-10 max-w-full text-left"
       >
         {selectedBox === 0 && (
-          <div id="XYZONE" key={selectedBox} data-aos="fade-left">
+          <div id="XYZONE" key={selectedBox} >
             <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               XYZONE Media (Portal News)
             </h2>
@@ -183,7 +183,7 @@ const Digital = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="DOOH" key={selectedBox} data-aos="fade-left">
+          <div id="DOOH" key={selectedBox} >
             <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               Media Placement & Monitoring: TV, Radio, Print Ad, Digital Out of
               Home (DOOH)
@@ -253,7 +253,7 @@ const Digital = () => {
           </div>
         )}
         {selectedBox === 2 && (
-          <div id="Rental" key={selectedBox} data-aos="fade-left">
+          <div id="Rental" key={selectedBox} >
             <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
               LED Rental Service (AUVI89)
             </h2>
@@ -314,7 +314,7 @@ const Digital = () => {
           </div>
         )}
         {selectedBox === 3 && (
-          <div id="Digital-Marketing" key={selectedBox} data-aos="fade-left">
+          <div id="Digital-Marketing" key={selectedBox} >
             <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold mb-4 ">
               Digital Marketing Services
             </h2>

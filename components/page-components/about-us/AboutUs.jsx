@@ -253,7 +253,7 @@ const AboutUs = () => {
      </div>
       
       <div
-        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hideen"
+        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
         style={getTransformStyle(900, -240, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
@@ -266,7 +266,7 @@ const AboutUs = () => {
         />
       </div>
       <div
-        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hideen"
+        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
         style={getTransformStyle(840, 230, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
@@ -279,7 +279,7 @@ const AboutUs = () => {
         />
       </div>
       <div
-        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hideen"
+        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
         style={getTransformStyle(550, -230, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
@@ -292,7 +292,7 @@ const AboutUs = () => {
         />
       </div>
       <div
-        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hideen"
+        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
         style={getTransformStyle(300, -100, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
@@ -305,7 +305,7 @@ const AboutUs = () => {
         />
       </div>
       <div
-        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hideen"
+        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
         style={getTransformStyle(350, 200, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
@@ -318,7 +318,7 @@ const AboutUs = () => {
         />
       </div>
       <div
-        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hideen"
+        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
         style={getTransformStyle( 300, 230, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image

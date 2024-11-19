@@ -21,16 +21,16 @@ const Event = () => {
   };
 
    // Scroll to view ketika selectedBox berubah
-  //  useEffect(() => {
-  //   if (selectedBox !== null) {
-  //     const sectionIds = ["", "Event", "MICE", "Brand"]; // Mapping ID
-  //     const section = document.getElementById(sectionIds[selectedBox]);
-  //     if (section) {
-  //       section.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+   useEffect(() => {
+    if (selectedBox !== null) {
+      const sectionIds = ["", "Event", "MICE", "Brand"]; // Mapping ID
+      const section = document.getElementById(sectionIds[selectedBox]);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
 
-  //     }
-  //   }
-  // }, [selectedBox]);
+      }
+    }
+  }, [selectedBox]);
   
 
   return (
@@ -98,9 +98,9 @@ const Event = () => {
       {/* Section Kotak di Tengah */}
 
       {/* Konten Dinamis */}
-      <div data-aos="fade-up" className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-0 2xl:mt-20  mt-10 max-w-full text-left">
+      <div data-aos="fade-up" className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-5 2xl:mt-20  mt-5 max-w-full text-left">
         {selectedBox === 0 && (
-          <div id="Production"  key={selectedBox}  data-aos="fade-left" className="2xl:w-full w-full 2xl:px-0 px-5 overflow-hidden "   >
+          <div id="Production"  key={selectedBox}   className="2xl:w-full w-full 2xl:px-0  overflow-hidden "   >
             <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[44px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               Production
             </h2>
@@ -149,8 +149,8 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="Event"  key={selectedBox}  data-aos="fade-left" className="relative 2xl:w-full w-full 2xl:px-0 px-5 max-w-full overflow-hidden " >
-            <h2 className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
+          <div  key={selectedBox}   className="relative 2xl:w-full w-full 2xl:px-0  max-w-full overflow-hidden " >
+            <h2 id="Event"  className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
               Event Management
             </h2>
             <p>
@@ -214,8 +214,8 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 2 && (
-          <div  id="MICE" key={selectedBox}  data-aos="fade-left" className="2xl:w-full w-full 2xl:px-0 px-5 overflow-hidden ">
-            <h2 className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] font-bold py-5">
+          <div   key={selectedBox}   className="2xl:w-full w-full 2xl:px-0  overflow-hidden ">
+            <h2 id="MICE" className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] font-bold py-5">
               MICE (Meetings, Incentives, Conferences, and Exhibitions)
             </h2>
             <p>
@@ -281,9 +281,9 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 3 && (
-          <div  id="Brand"  key={selectedBox}  data-aos="fade-left" className="2xl:w-full w-full 2xl:px-0 px-5 overflow-hidden " 
+          <div    key={selectedBox}   className="2xl:w-full w-full 2xl:px-0  overflow-hidden " 
           >
-            <h2  className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
+            <h2 id="Brand" className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
               Brand Activation
             </h2>
             <p>
