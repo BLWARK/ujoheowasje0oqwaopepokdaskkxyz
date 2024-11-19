@@ -32,7 +32,7 @@ const Hero = () => {
   });
 
   return (
-    <div id="home" className="Hero relative w-full h-screen md:h-screen " data-aos="fade-up">
+    <div id="home" className="Hero relative w-full h-screen md:h-screen " >
       {/* Background Video */}
       <video
         autoPlay
@@ -57,12 +57,13 @@ const Hero = () => {
       <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden  hidden"
         style={getTransformStyle(1300, 600, 20, 20)} // Initial X: 1300px, Y: 600px
+        data-aos="fade-up"
       >
         <Image
           src="/A1.png"
           alt="Hero Image"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           priority={true}
           className="float-animation"
         />
@@ -70,7 +71,8 @@ const Hero = () => {
 
       <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
-        style={getTransformStyle(260, 200, 15, 15)} // Initial X: 260px, Y: 200px
+        style={getTransformStyle(260, 50, 15, 15)} // Initial X: 260px, Y: 200px
+        data-aos="fade-up"
       >
         <Image
           src="/A2.png"
@@ -83,26 +85,28 @@ const Hero = () => {
       </div>
       <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
-        style={getTransformStyle(260, 400, 10, 10)} // Initial X: 260px, Y: 400px
+        style={getTransformStyle(260, 300, 10, 10)} // Initial X: 260px, Y: 400px
+        data-aos="fade-up"
       >
         <Image
           src="/A3.png"
           alt="Hero Image"
-          width={200}
-          height={200}
+          width={250}
+          height={250}
           priority={true}
           className="float-animation"
         />
       </div>
       <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
-        style={getTransformStyle(1400, -200, 20, 20)} // Initial X: 1400px, Y: -200px
+        style={getTransformStyle(1350, -300, 20, 20)} // Initial X: 1400px, Y: -200px
+        data-aos="fade-up"
       >
         <Image
           src="/A4.png"
           alt="Hero Image"
-          width={90}
-          height={90}
+          width={250}
+          height={250}
           priority={true}
           className="float-animation"
         />
@@ -121,8 +125,8 @@ const Hero = () => {
         <Image
           src="/A1.png"
           alt="Hero Image"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           priority={true}
           className="float-animation"
         />
@@ -144,13 +148,13 @@ const Hero = () => {
 
       <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
-        style={getTransformStyle(40, 420, 10, 10)} // Initial X: 260px, Y: 400px
+        style={getTransformStyle(40, 400, 10, 10)} // Initial X: 260px, Y: 400px
       >
         <Image
           src="/A3.png"
           alt="Hero Image"
-          width={100}
-          height={100}
+          width={120}
+          height={120}
           priority={true}
           className="float-animation"
         />
@@ -158,13 +162,13 @@ const Hero = () => {
 
       <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
-        style={getTransformStyle(270, 70, 5, 5)} // Initial X: 1400px, Y: -200px
+        style={getTransformStyle(270, 20, 5, 5)} // Initial X: 1400px, Y: -200px
       >
         <Image
           src="/A4.png"
           alt="Hero Image"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
           priority={true}
           className="float-animation"
         />
@@ -179,8 +183,8 @@ const Hero = () => {
         <Image
           src="/A1.png"
           alt="Hero Image"
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           priority={true}
           className="float-animation"
         />
@@ -193,8 +197,8 @@ const Hero = () => {
         <Image
           src="/A2.png"
           alt="Hero Image"
-          width={200}
-          height={200}
+          width={170}
+          height={170}
           priority={true}
           className="float-animation"
         />
@@ -219,8 +223,8 @@ const Hero = () => {
         <Image
           src="/A4.png"
           alt="Hero Image"
-          width={90}
-          height={90}
+          width={160}
+          height={160}
           priority={true}
           className="float-animation"
         />
@@ -229,65 +233,77 @@ const Hero = () => {
 
 
       {/* Title and CTA Button */}
-      <div className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10">
-        <Image
-          src="/XYZ ONLY.png"
-          alt="Hero Image"
-          width={300}
-          height={300}
-          priority={true}
-          className="2xl:w-[10%] w-[20%]"
-          style={{
-            animation: "slide-up 1.5s ease-out forwards",
-            animationDelay: "0.5s",
-          }}
-        />
-        <h1
-          className="w-full 2xl:text-[106px] text-[32px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
-          style={{
-            animation: "slide-up 1.5s ease-out forwards",
-            animationDelay: "1.0s",
-          }}
-        >
-          
-          CREATIVE GROUP
-        </h1>
-        <p
-          className="w-full 2xl:text-[32px] text-[14px] md:text-[16px] font-medium text-white opacity-0"
-          style={{
-            animation: "slide-up 1.5s ease-out forwards",
-            animationDelay: "1.5s",
-          }}
-        >
-          PT Bisnis Ekosistem Kreatif Indonesia
-        </p>
-        <div className="button flex 2xl:flex-row flex-col justify-center items-center 2xl:gap-10 gap-3 2xl:mt-0 mt-5">
-        <a
-          href="https://wa.link/jkjtnj"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 md:px-8 md:py-4 bg-secondary text-white font-semibold rounded-full hover:bg-hover transition duration-300 mt-5 md:mt-10 opacity-0 cursor-custom nav-link"
-          style={{
-            animation: "slide-up 1.5s ease-out forwards",
-            animationDelay: "2.0s",
-          }}
-        >
-          Contact us
-        </a>
-        {/* <a
-          href="https://wa.me/your_number"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 md:px-8 md:py-4 border-2 border-secondary text-white font-semibold rounded-full hover:bg-hover transition duration-300 mt-5 md:mt-10 opacity-0"
-          style={{
-            animation: "slide-up 1.5s ease-out forwards",
-            animationDelay: "2.0s",
-          }}
-        >
-          Our Services
-        </a> */}
-        </div>
-      </div>
+<div className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10">
+  <Image
+    src="/XYZ ONLY.png"
+    alt="Hero Image"
+    width={300}
+    height={300}
+    priority={true}
+    className="2xl:w-[10%] w-[20%]"
+    style={{
+      animation: "slide-up 1.5s ease-out forwards",
+      animationDelay: "0.5s",
+    }}
+  />
+  <h1
+    className="w-full 2xl:text-[106px] text-[32px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
+    style={{
+      animation: "slide-up 1.5s ease-out forwards",
+      animationDelay: "1.0s",
+    }}
+  >
+    CREATIVE GROUP
+  </h1>
+  <p
+    className="w-full 2xl:text-[32px] text-[14px] md:text-[16px] font-medium text-white opacity-0"
+    style={{
+      animation: "slide-up 1.5s ease-out forwards",
+      animationDelay: "1.5s",
+    }}
+  >
+    PT Bisnis Ekosistem Kreatif Indonesia
+  </p>
+
+  {/* Kotak Gambar */}
+  <div className="flex 2xl:flex-row flex-col justify-center items-center gap-10 mt-10 opacity-0" 
+    style={{
+      animation: "slide-up 1.5s ease-out forwards",
+      animationDelay: "2.0s",
+    }}
+  >
+    {/* Kotak 1 */}
+    <a
+      href="https://xyzonemedia.com" // Ganti dengan URL Anda
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative  w-[170px] h-[65px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
+    >
+      <Image
+        src="/xyzone.png" // Ganti dengan gambar Anda
+        alt="Kotak 1"
+        fill
+        className="object-contain px-10"
+      />
+    </a>
+
+    {/* Kotak 2 */}
+    <a
+      href="https://lbj.xyzonemedia.com/" // Ganti dengan URL Anda
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative w-[170px] h-[65px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
+    >
+      <Image
+        src="/LBJ.png" // Ganti dengan gambar Anda
+        alt="Kotak 2"
+        fill
+        className="object-contain"
+      />
+    </a>
+  </div>
+</div>
+
     </div>
   );
 };

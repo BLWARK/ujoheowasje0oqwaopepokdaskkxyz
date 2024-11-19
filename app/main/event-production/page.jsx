@@ -21,16 +21,16 @@ const Event = () => {
   };
 
    // Scroll to view ketika selectedBox berubah
-   useEffect(() => {
-    if (selectedBox !== null) {
-      const sectionIds = ["", "Event", "MICE", "Brand"]; // Mapping ID
-      const section = document.getElementById(sectionIds[selectedBox]);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+  //  useEffect(() => {
+  //   if (selectedBox !== null) {
+  //     const sectionIds = ["", "Event", "MICE", "Brand"]; // Mapping ID
+  //     const section = document.getElementById(sectionIds[selectedBox]);
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
 
-      }
-    }
-  }, [selectedBox]);
+  //     }
+  //   }
+  // }, [selectedBox]);
   
 
   return (
@@ -59,10 +59,10 @@ const Event = () => {
 
           <div data-aos="fade-up" className="relative grid grid-cols-2 2xl:grid-cols-4 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5 max-w-full 2xl:mt-20   place-items-center">
             {[
-              { img: "/1.jpg", title: "Production" },
-              { img: "/1.jpg", title: "Event Management" },
-              { img: "/1.jpg", title: "MICE" },
-              { img: "/1.jpg", title: "Brand Activation" },
+              { img: "/PRODUCTION.jpg", title: "Production" },
+              { img: "/EVENTMANAGEMENT.jpg", title: "Event Management" },
+              { img: "/MICE.jpg", title: "MICE" },
+              { img: "/BRANDACVTIVATION.jpg", title: "Brand Activation" },
             ].map((box, index) => (
               <div
                 key={index}
@@ -149,7 +149,7 @@ const Event = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="Event"  key={selectedBox}  data-aos="fade-left" className="relative 2xl:w-full w-full 2xl:px-0 px-10 max-w-full overflow-hidden " >
+          <div id="Event"  key={selectedBox}  data-aos="fade-left" className="relative 2xl:w-full w-full 2xl:px-0 px-5 max-w-full overflow-hidden " >
             <h2 className=" text-secondary text-[26px] md:text-[48px] lg:text-[44px] py-5 font-bold">
               Event Management
             </h2>
@@ -168,7 +168,7 @@ const Event = () => {
               Main Services
             </p>
 
-            <ul className="list-disc list-outside 2xl:px-10 px-0 py-5 marker:text-hover flex flex-col gap-4 max-w-full">
+            <ul className="list-disc list-outside 2xl:px-10 px-5 py-5 marker:text-hover flex flex-col gap-4 max-w-full">
               <li>
                 <span className="font-bold text-secondary">
                   Event Planning:

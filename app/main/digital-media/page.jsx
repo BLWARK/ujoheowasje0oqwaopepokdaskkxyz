@@ -21,18 +21,18 @@ const Digital = () => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik
   };
 
-  useEffect(() => {
-    if (selectedBox !== null) {
-      const sectionIds = ["", "DOOH", "Rental", "Digital-Marketing"]; // Mapping ID
-      const section = document.getElementById(sectionIds[selectedBox]);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  }, [selectedBox]);
+  // useEffect(() => {
+  //   if (selectedBox !== null) {
+  //     const sectionIds = ["", "DOOH", "Rental", "Digital-Marketing"]; // Mapping ID
+  //     const section = document.getElementById(sectionIds[selectedBox]);
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: "smooth", block: "start" });
+  //     }
+  //   }
+  // }, [selectedBox]);
 
   return (
-    <div className="relative w-full h-full bg-gray-900 text-white ">
+    <div className="relative mx-auto overflow-hidden max-w-full w-full h-full bg-gray-900 text-white">
       {/* Hero Section */}
       <div className="relative w-full h-[600px] 2xl:h-[750px]">
         <Image
@@ -56,10 +56,10 @@ const Digital = () => {
             className="relative grid grid-cols-2 2xl:grid-cols-4 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center"
           >
             {[
-              { img: "/1.jpg", title: "XYZONE Media" },
-              { img: "/1.jpg", title: "Media Placement" },
-              { img: "/1.jpg", title: "Rental LED (AUVI89)" },
-              { img: "/1.jpg", title: "Digital Marketing" },
+              { img: "/XYZONE.jpg", title: "XYZONE Media" },
+              { img: "/MEDIAPLACEMENT.jpg", title: "Media Placement" },
+              { img: "/LED.jpg", title: "LED Rental (AUVI89)" },
+              { img: "/DIGITALMARKETING.jpg", title: "Digital Marketing" },
             ].map((box, index) => (
               <div
                 key={index}
@@ -96,7 +96,7 @@ const Digital = () => {
       {/* Konten Dinamis */}
       <div
         data-aos="fade-up"
-        className="relative dynamic-content w-full 2xl:px-40  px-5 2xl:mt-10   mt-48"
+        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-0 2xl:mt-20  mt-10 max-w-full text-left"
       >
         {selectedBox === 0 && (
           <div id="XYZONE" key={selectedBox} data-aos="fade-left">
@@ -237,6 +237,7 @@ const Digital = () => {
                 areas.
               </li>
             </ul>
+            <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
 
             <div className="2xl:px-0 px-2 py-2 mt-10 marker:text-hover flex flex-col gap-4 font-bold text-secondary text-[24px]">
               Advantages:
@@ -314,7 +315,7 @@ const Digital = () => {
         )}
         {selectedBox === 3 && (
           <div id="Digital-Marketing" key={selectedBox} data-aos="fade-left">
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
+            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold mb-4 ">
               Digital Marketing Services
             </h2>
             <p>

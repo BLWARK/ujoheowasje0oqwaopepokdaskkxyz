@@ -21,15 +21,15 @@ const Legal = () => {
     setSelectedBox(boxIndex); // Simpan index kotak yang diklik
   };
 
-  useEffect(() => {
-    if (selectedBox !== null) {
-      const sectionIds = ["", "Crypto", "Podcast", "FILM", "Community"]; // Mapping ID
-      const section = document.getElementById(sectionIds[selectedBox]);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  }, [selectedBox]);
+  // useEffect(() => {
+  //   if (selectedBox !== null) {
+  //     const sectionIds = ["", "Crypto", "Podcast", "FILM", "Community"]; // Mapping ID
+  //     const section = document.getElementById(sectionIds[selectedBox]);
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: "smooth", block: "start" });
+  //     }
+  //   }
+  // }, [selectedBox]);
 
   return (
     <div className="relative w-full h-full bg-gray-900 text-white">
@@ -56,18 +56,18 @@ const Legal = () => {
             className="relative grid grid-cols-2 2xl:grid-cols-5 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center"
           >
             {[
-              { img: "/1.jpg", title: "Law Firm" },
-              { img: "/1.jpg", title: "XYZ Crypto Universe" },
-              { img: "/1.jpg", title: "Podcast" },
-              { img: "/1.jpg", title: "Film" },
-              { img: "/1.jpg", title: "Community" },
+              { img: "/LAWFIRM.jpg", title: "Law Firm" },
+              { img: "/CRYPTO.jpg", title: "XYZ Crypto Universe" },
+              { img: "/PODCAST.jpg", title: "Podcast" },
+              { img: "/FILM.jpg", title: "Film" },
+              { img: "/COMU.jpg", title: "Community" },
             ].map((box, index) => (
               <div
                 key={index}
                 className={`w-[150px] h-[150px] 2xl:h-[250px] 2xl:w-[250px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
                   selectedBox === index
-                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-110"
-                    : "bg-gray-700 hover:border-secondary  hover:border-4 hover:scale-105"
+                    ? "2xl:border-4 border-2 border-blue-400 bg-gray-800 scale-110"
+                    : "bg-gray-700 hover:border-blue-400  hover:border-4 hover:scale-105"
                 } transition-all duration-300`}
                 onClick={() => handleBoxClick(index)}
               >
@@ -81,7 +81,7 @@ const Legal = () => {
                 />
 
                 {/* Title di dalam kotak */}
-                <div className="absolute 2xl:py-10 py-4 bottom-0 flex items-center justify-center ">
+                <div className="absolute 2xl:py-15 py-4 bottom-0 flex items-center justify-center ">
                   <p className="text-white font-bold text-center text-[10px] md:text-base lg:text-lg">
                     {box.title} {/* Title diambil dari data array */}
                   </p>
@@ -95,7 +95,7 @@ const Legal = () => {
       {/* Konten Dinamis */}
       <div
         data-aos="fade-up"
-        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-6 2xl:mt-20  mt-48 max-w-full text-left"
+        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-4 2xl:mt-5  mt-48 max-w-full text-left"
       >
         {selectedBox === 0 && (
           <div id="Law Firm" key={selectedBox} data-aos="fade-left">
@@ -260,8 +260,8 @@ const Legal = () => {
           </div>
         )}
         {selectedBox === 1 && (
-          <div id="Crypto"  key={selectedBox} data-aos="fade-left">
-            <h2  className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+          <div id="Crypto" key={selectedBox} data-aos="fade-left">
+            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               XYZ Crypto Universe
             </h2>
             <p>
@@ -799,7 +799,6 @@ const Legal = () => {
             data-aos="fade-left"
             className="relative w-full"
           >
-            <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 my-10"></div>
             <h2 className="text-secondary text-[28px] md:text-[48px] lg:text-[64px] py-5 font-bold">
               Podcast
             </h2>
@@ -810,24 +809,18 @@ const Legal = () => {
               topics supported by local communities, providing a space for
               audiences to discuss and share insights.
             </p>
-            
+            <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 my-10"></div>
 
             {/* Kontainer untuk kotak-kotak YouTube */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-5 md:px-10">
               {[
-                {
-                  title: "Jalan Tengah",
+                 {
+                  title: "XYZONE Update",
                   video:
-                    "https://www.youtube.com/embed/F5wWOARZ1Fw?si=zxii4LXnMSKYWsG",
+                    "https://www.youtube.com/embed/aPkhhDpZ74c?si=tmRzGa5J4o2Z4TwY8",
                   description:
-                    "A program that discusses social and political issues from a neutral standpoint, fostering balanced and constructive dialogue to promote mutual understanding.",
-                },
-                {
-                  title: "Runway Gosip",
-                  video:
-                    "https://www.youtube.com/embed/sFeYi_BS67A?si=JVK0ia3ntu2-uqYK",
-                  description:
-                    "A program diving into the latest trends in fashion and celebrity lifestyle, including behind-the-scenes stories and exclusive interviews with designers and fashion icons.",
+                    "The latest news on technology, culture, and creative communities relevant to Generations X, Y, and Z, offering insights into tech developments and new trends.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dchBCnXQXmS-wDp6fKo2hd9Y&si=4bY2QsA_t2vEhpVu",
                 },
                 {
                   title: "LBJ 24 Viral",
@@ -835,6 +828,23 @@ const Legal = () => {
                     "https://www.youtube.com/embed/mzNWohCo3P8?si=gj6zg6DJCfXst7nR",
                   description:
                     "Exploring viral phenomena on social media, providing in-depth analysis and behind-the-scenes stories of the latest trending topics.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dch8kCEgfz1NZyg-kRghtuur&si=DNCdM-k51pPfggCR",
+                },
+                {
+                  title: "Jalan Tengah",
+                  video:
+                    "https://www.youtube.com/embed/F5wWOARZ1Fw?si=zxii4LXnMSKYWsG",
+                  description:
+                    "A program that discusses social and political issues from a neutral standpoint, fostering balanced and constructive dialogue to promote mutual understanding.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dcjQ5TqkRBviEw1m40lOXyCb&si=biyAHSYIYkFmNwxQ", // Tambahkan link eksternal
+                },
+                {
+                  title: "Runway Gosip",
+                  video:
+                    "https://www.youtube.com/embed/sFeYi_BS67A?si=JVK0ia3ntu2-uqYK",
+                  description:
+                    "A program diving into the latest trends in fashion and celebrity lifestyle, including behind-the-scenes stories and exclusive interviews with designers and fashion icons.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dcgxKjoD1Z5-1F5Vu6rb63qT&si=53wWOrb-GV71dDSf",
                 },
                 {
                   title: "Raptile Ranger",
@@ -842,6 +852,7 @@ const Legal = () => {
                     "https://www.youtube.com/embed/axh3kM0pF40?si=t9aMr24dcWMYUgTo",
                   description:
                     "An educational program for reptile enthusiasts, covering pet care, habitats, and the uniqueness of these exotic pets, offering insights into the world of reptiles.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dciOVCC_22ZN3EU8SQmL0ack&si=gE5hxjZLEsn0Kg1b",
                 },
                 {
                   title: "Banzai Hub",
@@ -849,6 +860,7 @@ const Legal = () => {
                     "https://www.youtube.com/embed/i1rd9ra5jWM?si=B8MP_lpL6as4JGZG",
                   description:
                     "A spotlight on the cosplay community and Japanese culture, featuring interviews with cosplayers, pop culture discussions, and Japanese-themed events that attract fans.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dch3ctkclyBlsm9Y3hErdhiN&si=CxBBZZuTs-ZBqEqr",
                 },
                 {
                   title: "CIV POD",
@@ -856,6 +868,7 @@ const Legal = () => {
                     "https://www.youtube.com/embed/vMf7_m3QKHA?si=Tg3ExjpW52QNemKg",
                   description:
                     "A podcast educating listeners about the care and habitat of civets, as well as unique stories from civet owners and enthusiasts in Indonesia.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dcg7Tayhy_n2C6NNQLInsUPN&si=ClAok81ROJTeXNCj",
                 },
                 {
                   title: "C. Talk",
@@ -863,23 +876,39 @@ const Legal = () => {
                     "https://www.youtube.com/embed/Go0Mak0XIn8?si=111fqFL-L5_3c0x8",
                   description:
                     "In-depth discussions about careers, business, and inspiring journeys from professionals across various fields, offering valuable insights for listeners aiming to develop themselves.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dcg08RXmZ8S3vZqCa_-JIjAR&si=V2ZSg52Kimzr5TqF",
                 },
                 {
-                  title: "XYZONE Update",
+                  title: "Santri Santuy",
                   video:
-                    "https://www.youtube.com/embed/aPkhhDpZ74c?si=tmRzGa5J4o2Z4TwY8",
+                    "https://www.youtube.com/embed/FGdaURXtSWw?si=iAUYHJdK0vVlVuGY",
                   description:
-                    "The latest news on technology, culture, and creative communities relevant to Generations X, Y, and Z, offering insights into tech developments and new trends.",
+                    "A program featuring light and inspiring stories from the world of santri, discussing pesantren life, traditions, and their perspectives on current issues.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dchxdCWhdryUYOrPfvfmvbOH&si=iJXWqMom8Vjzkw-2",
                 },
+                {
+                  title: "Dari Party Ke Hati",
+                  video:
+                    "https://www.youtube.com/embed/5HPi5-XX868?si=1k4Y7xiNdCTyFYwP",
+                  description:
+                    "Presenting unique stories from the entertainment world, from vibrant parties to inspiring emotional tales.",
+                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dcg7-UAGPvVv8K680_-wEEyi&si=5jzCWwKAcugcxJay",
+                },
+               
               ].map((podcast, index) => (
                 <div
                   key={index}
                   className="flex flex-col items-center bg-gray-800 rounded-xl shadow-lg overflow-hidden"
                 >
-                  {/* Judul */}
-                  <h3 className="text-secondary text-[22px] font-bold py-4 px-4">
+                  {/* Judul dengan Link */}
+                  <a
+                    href={podcast.link} // Tambahkan link ke judul
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary text-[22px] font-bold py-4 px-4 hover:text-hover"
+                  >
                     {podcast.title}
-                  </h3>
+                  </a>
 
                   {/* Video Embed */}
                   <div
@@ -1056,7 +1085,6 @@ const Legal = () => {
           </div>
         )}
         <div className="w-full flex justify-center items-center h-[2px] bg-gray-500 mt-10"></div>
-        
       </div>
 
       <div className="2xl:w-full flex justify-center items-center">
