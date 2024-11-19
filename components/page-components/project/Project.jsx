@@ -33,7 +33,7 @@ const Project = () => {
           </div>
           <div data-aos="fade-up" className="p-6  rounded-lg shadow-lg  items-center justify-center w-[1900px] h-auto  backdrop-blur-2xl bg-transparent my-[50px] 2xl:block xl:hidden hidden">
               <Image
-                src="/Project.jpg"
+                src="/Project-min.jpg"
                 alt="Project"
                 width={3300}
                 height={1200}
@@ -44,7 +44,7 @@ const Project = () => {
 
             <div data-aos="fade-up" className="p-6  rounded-lg shadow-lg  items-center justify-center w-[1200px] h-auto  backdrop-blur-2xl bg-transparent my-[50px] 2xl:hidden xl:block hidden">
               <Image
-                src="/ProjectMb.jpg"
+                src="/ProjectMb-min.png"
                 alt="Project"
                 width={1200}
                 height={1200}
@@ -55,7 +55,7 @@ const Project = () => {
             <div data-aos="fade-up" className="p-6  rounded-lg shadow-lg items-center justify-center w-[440px] h-auto backdrop-blur-2xl bg-transparent 2xl:hidden xl:hidden block mb-20">
       <Zoom>
         <Image
-          src="/ProjectMb.jpg"
+          src="/ProjectMb-min.png"
           alt="Project"
           width={1200}
           height={500}
