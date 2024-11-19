@@ -28,7 +28,7 @@ const Services = () => {
     },
     {
       img: "/3.jpg",
-      title: "Media Plan",
+      title: "Media Planning",
       description:
         "Whether you're launching a new product or increasing brand awareness, our media plans are crafted to meet your unique business objectives and drive results.",
     },
