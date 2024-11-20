@@ -29,7 +29,7 @@ const Call = () => {
        
         <div className="w-[100px] h-[5px] bg-hover rounded-full mb-10 -mt-10"></div>
          
-          <p className="w-full flex 2xl:justify-center 2xl:items-center md:justify-center md:items-center 2xl:text-center text-secondary 2xl:text-[52px] md:text-[58px] text-[32px] font-bold">
+          <p className="w-full flex 2xl:justify-center 2xl:items-center xl:items-center md:justify-center md:items-center 2xl:text-center xl:text-center lg:text-center md:text-center text-secondary 2xl:text-[52px] md:text-[58px] text-[32px] font-bold">
           Solve Your Business Problems with Innovative Solutions
           </p>
 

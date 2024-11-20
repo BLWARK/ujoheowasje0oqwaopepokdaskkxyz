@@ -177,8 +177,8 @@ const Hero = () => {
 
         {/* tablet */}
         <div
-        className="relative w-full 2xl:hidden md:block hidden "
-        style={getTransformStyle(700, 600, 20, 20)} // Initial X: 1300px, Y: 600px
+        className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden "
+        style={getTransformStyle(900, 600, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
           src="/A1.png"
@@ -191,8 +191,8 @@ const Hero = () => {
       </div>
 
       <div
-        className="relative w-full 2xl:hidden md:block hidden"
-        style={getTransformStyle(60, 200, 15, 15)} // Initial X: 260px, Y: 200px
+        className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
+        style={getTransformStyle(140, 100, 15, 15)} // Initial X: 260px, Y: 200px
       >
         <Image
           src="/A2.png"
@@ -204,8 +204,8 @@ const Hero = () => {
         />
       </div>
       <div
-        className="relative w-full 2xl:hidden md:block hidden"
-        style={getTransformStyle(160, 380, 10, 10)} // Initial X: 260px, Y: 400px
+        className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
+        style={getTransformStyle(260, 380, 10, 10)} // Initial X: 260px, Y: 400px
       >
         <Image
           src="/A3.png"
@@ -217,8 +217,8 @@ const Hero = () => {
         />
       </div>
       <div
-        className="relative w-full 2xl:hidden md:block  hidden"
-        style={getTransformStyle(700, -170, 20, 20)} // Initial X: 1400px, Y: -200px
+        className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
+        style={getTransformStyle(900, -200, 20, 20)} // Initial X: 1400px, Y: -200px
       >
         <Image
           src="/A4.png"
@@ -240,7 +240,7 @@ const Hero = () => {
     width={350}
     height={350}
     priority={true}
-    className="2xl:w-[10%] w-[30%]"
+    className="2xl:w-[10%] xl:w-[10%] w-[30%]"
     style={{
       animation: "slide-up 1.5s ease-out forwards",
       animationDelay: "0.5s",
