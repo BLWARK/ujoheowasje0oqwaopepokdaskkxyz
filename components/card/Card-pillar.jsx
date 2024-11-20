@@ -44,7 +44,7 @@ const CardPillar = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
       <Link href="/main/event-production">
         <button className="text-white bg-secondary py-4 px-6 rounded-full flex items-center gap-2 font-semibold">
-          See More <FaArrowRight />
+          More Details <FaArrowRight />
         </button>
         </Link>
       </div>
@@ -78,7 +78,7 @@ const CardPillar = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
       <Link href="/main/legal-ip-community">
         <button className="text-white bg-secondary py-4 px-6 rounded-full flex items-center gap-2 font-semibold">
-          See More <FaArrowRight />
+          More Details <FaArrowRight />
         </button>
         </Link>
       </div>
@@ -109,7 +109,7 @@ const CardPillar = () => {
       <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
       <Link href="/main/digital-media">
         <button className="text-white bg-secondary py-4 px-6 rounded-full flex items-center gap-2 font-semibold">
-          See More <FaArrowRight />
+          More Details <FaArrowRight />
         </button>
         </Link>
       </div>

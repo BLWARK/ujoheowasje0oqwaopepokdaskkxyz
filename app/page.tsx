@@ -10,6 +10,7 @@ import Services from "@/components/page-components/services/Services";
 import Client from "@/components/page-components/client/Client";
 import Project from "@/components/page-components/project/Project";
 import Teams from "@/components/page-components/teams/Teams";
+import Call from "@/components/page-components/call-to-action/Call"
 
 const Page = () => {
   
@@ -51,6 +52,7 @@ const Page = () => {
       <Client />
       <Project />
       <Teams />
+      <Call/>
     </div>
   );
 };

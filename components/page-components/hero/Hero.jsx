@@ -46,7 +46,7 @@ const Hero = () => {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-30"></div>
+      <div className="absolute inset-0 bg-black 2xl:opacity-20 opacity-30"></div>
 
 
 
@@ -134,7 +134,7 @@ const Hero = () => {
 
       <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
-        style={getTransformStyle(20, 200, 15, 15)} // Initial X: 260px, Y: 200px
+        style={getTransformStyle(20, 120, 15, 15)} // Initial X: 260px, Y: 200px
       >
         <Image
           src="/A2.png"
@@ -162,7 +162,7 @@ const Hero = () => {
 
       <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
-        style={getTransformStyle(270, 20, 5, 5)} // Initial X: 1400px, Y: -200px
+        style={getTransformStyle(270, -70, 5, 5)} // Initial X: 1400px, Y: -200px
       >
         <Image
           src="/A4.png"
@@ -237,17 +237,17 @@ const Hero = () => {
   <Image
     src="/XYZ ONLY.png"
     alt="Hero Image"
-    width={300}
-    height={300}
+    width={350}
+    height={350}
     priority={true}
-    className="2xl:w-[10%] w-[20%]"
+    className="2xl:w-[10%] w-[30%]"
     style={{
       animation: "slide-up 1.5s ease-out forwards",
       animationDelay: "0.5s",
     }}
   />
   <h1
-    className="w-full 2xl:text-[106px] text-[32px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
+    className="w-full 2xl:text-[106px] text-[36px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
     style={{
       animation: "slide-up 1.5s ease-out forwards",
       animationDelay: "1.0s",
@@ -266,7 +266,7 @@ const Hero = () => {
   </p>
 
   {/* Kotak Gambar */}
-  <div className="flex 2xl:flex-row flex-col justify-center items-center gap-10 mt-10 opacity-0" 
+  <div className="flex 2xl:flex-row flex-col justify-center items-center 2xl:gap-10 gap-5 mt-10 opacity-0" 
     style={{
       animation: "slide-up 1.5s ease-out forwards",
       animationDelay: "2.0s",
@@ -277,7 +277,7 @@ const Hero = () => {
       href="https://xyzonemedia.com" // Ganti dengan URL Anda
       target="_blank"
       rel="noopener noreferrer"
-      className="relative  w-[170px] h-[65px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
+      className="relative  w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
     >
       <Image
         src="/xyzone.png" // Ganti dengan gambar Anda
@@ -292,7 +292,7 @@ const Hero = () => {
       href="https://lbj.xyzonemedia.com/" // Ganti dengan URL Anda
       target="_blank"
       rel="noopener noreferrer"
-      className="relative w-[170px] h-[65px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
+      className="relative w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
     >
       <Image
         src="/LBJ.png" // Ganti dengan gambar Anda

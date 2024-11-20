@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/footer/Footer"
+import ScrollTop from "@/components/scroll-to-top/Scroll"
 import "./globals.css";
 
 const poppins = Poppins({
@@ -32,6 +33,7 @@ export default function RootLayout({
            
           </div>
           <Footer  />
+          <ScrollTop/>
         </div>
         
       </body>

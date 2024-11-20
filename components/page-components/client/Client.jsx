@@ -34,6 +34,7 @@ const Client = () => {
         "/INDOBAROMETER.png",
         "/MPR.png",
         "/Depaul.png",
+        "/BPKH.png",
       ];
   return (
     <div id="Client" className="Our-client w-full 2xl:h-full flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col justify-center items-center 2xl:px-20 px-5 md:py-[100px] py-[20px] bg-gradient-to-t from-teal-600 to-white ">

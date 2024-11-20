@@ -83,7 +83,7 @@ const Teams = () => {
     {...swipeHandlers}
     id="Teams"
     data-aos="fade-up"
-    className="Leaders Our-pillar-sec w-full 2xl:h-full flex flex-col 2xl:justify-center 2xl:items-center xl:justify-center xl:items-center justify-start items-start 2xl:px-20 px-5 md:py-[100px] py-[20px] bg-gray-700"
+    className="Leaders Our-pillar-sec w-full 2xl:h-full h-[1650px] flex flex-col 2xl:justify-center 2xl:items-center xl:justify-center xl:items-center justify-start items-start 2xl:px-20 px-5 md:py-[100px] py-[20px] bg-gray-700"
   >
     <p className="w-full flex 2xl:justify-center 2xl:items-center xl:justify-center xl:items-center justify-start items-start 2xl:text-[28px] text-[20px] text-secondary font-bold 2xl:mt-10 mt-10">
       Meet Our Visionary Leaders

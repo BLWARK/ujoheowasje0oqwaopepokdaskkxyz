@@ -65,8 +65,8 @@ const Digital = () => {
                 key={index}
                 className={`w-[150px] h-[150px] 2xl:h-[250px] 2xl:w-[250px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
                   selectedBox === index
-                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-110"
-                    : "bg-gray-700 hover:border-secondary  hover:border-4 hover:scale-105"
+                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-125"
+                    : "bg-gray-700 hover:border-secondary  hover:border-4 hover:scale-125"
                 } transition-all duration-300`}
                 onClick={() => handleBoxClick(index)}
               >
@@ -80,7 +80,7 @@ const Digital = () => {
                 />
 
                 {/* Title di dalam kotak */}
-                <div className="absolute 2xl:py-10 py-4 bottom-0 flex items-center justify-center ">
+                <div className="absolute 2xl:py-[20px] py-4 bottom-0 flex items-center justify-center ">
                   <p className="text-white font-bold text-center text-[10px] md:text-base lg:text-lg">
                     {box.title} {/* Title diambil dari data array */}
                   </p>
