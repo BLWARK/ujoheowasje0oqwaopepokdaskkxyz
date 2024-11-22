@@ -32,7 +32,7 @@ const Hero = () => {
   });
 
   return (
-    <div id="home" className="Hero relative w-full h-screen md:h-screen " >
+    <div id="home" className="Hero relative w-full h-screen md:h-screen "  >
       {/* Background Video */}
       <video
         autoPlay
@@ -60,7 +60,7 @@ const Hero = () => {
         data-aos="fade-up"
       >
         <Image
-          src="/A1.png"
+          src="/B1.png"
           alt="Hero Image"
           width={150}
           height={150}
@@ -75,7 +75,7 @@ const Hero = () => {
         data-aos="fade-up"
       >
         <Image
-          src="/A2.png"
+          src="/B2.png"
           alt="Hero Image"
           width={200}
           height={200}
@@ -89,7 +89,7 @@ const Hero = () => {
         data-aos="fade-up"
       >
         <Image
-          src="/A3.png"
+          src="/B3.png"
           alt="Hero Image"
           width={250}
           height={250}
@@ -103,7 +103,7 @@ const Hero = () => {
         data-aos="fade-up"
       >
         <Image
-          src="/A4.png"
+          src="/B4.png"
           alt="Hero Image"
           width={250}
           height={250}
@@ -123,7 +123,7 @@ const Hero = () => {
         style={getTransformStyle(280, 500, 40, 40)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/A1.png"
+          src="/B1.png"
           alt="Hero Image"
           width={80}
           height={80}
@@ -137,7 +137,7 @@ const Hero = () => {
         style={getTransformStyle(20, 120, 15, 15)} // Initial X: 260px, Y: 200px
       >
         <Image
-          src="/A2.png"
+          src="/B2.png"
           alt="Hero Image"
           width={90}
           height={90}
@@ -151,7 +151,7 @@ const Hero = () => {
         style={getTransformStyle(40, 400, 10, 10)} // Initial X: 260px, Y: 400px
       >
         <Image
-          src="/A3.png"
+          src="/B3.png"
           alt="Hero Image"
           width={120}
           height={120}
@@ -165,7 +165,7 @@ const Hero = () => {
         style={getTransformStyle(270, -70, 5, 5)} // Initial X: 1400px, Y: -200px
       >
         <Image
-          src="/A4.png"
+          src="/B4.png"
           alt="Hero Image"
           width={100}
           height={100}
@@ -178,10 +178,10 @@ const Hero = () => {
         {/* tablet */}
         <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden "
-        style={getTransformStyle(900, 600, 20, 20)} // Initial X: 1300px, Y: 600px
+        style={getTransformStyle(1200, 600, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
-          src="/A1.png"
+          src="/B1.png"
           alt="Hero Image"
           width={100}
           height={100}
@@ -192,10 +192,10 @@ const Hero = () => {
 
       <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
-        style={getTransformStyle(140, 100, 15, 15)} // Initial X: 260px, Y: 200px
+        style={getTransformStyle(160, 100, 15, 15)} // Initial X: 260px, Y: 200px
       >
         <Image
-          src="/A2.png"
+          src="/B2.png"
           alt="Hero Image"
           width={170}
           height={170}
@@ -205,10 +205,10 @@ const Hero = () => {
       </div>
       <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
-        style={getTransformStyle(260, 380, 10, 10)} // Initial X: 260px, Y: 400px
+        style={getTransformStyle(290, 380, 10, 10)} // Initial X: 260px, Y: 400px
       >
         <Image
-          src="/A3.png"
+          src="/B3.png"
           alt="Hero Image"
           width={200}
           height={200}
@@ -218,10 +218,10 @@ const Hero = () => {
       </div>
       <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
-        style={getTransformStyle(900, -200, 20, 20)} // Initial X: 1400px, Y: -200px
+        style={getTransformStyle(1200, -200, 20, 20)} // Initial X: 1400px, Y: -200px
       >
         <Image
-          src="/A4.png"
+          src="/B4.png"
           alt="Hero Image"
           width={160}
           height={160}
@@ -277,7 +277,7 @@ const Hero = () => {
       href="https://xyzonemedia.com" // Ganti dengan URL Anda
       target="_blank"
       rel="noopener noreferrer"
-      className="relative  w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
+      className="relative  w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
     >
       <Image
         src="/xyzone.png" // Ganti dengan gambar Anda
@@ -292,7 +292,7 @@ const Hero = () => {
       href="https://lbj.xyzonemedia.com/" // Ganti dengan URL Anda
       target="_blank"
       rel="noopener noreferrer"
-      className="relative w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300"
+      className="relative w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
     >
       <Image
         src="/LBJ.png" // Ganti dengan gambar Anda

@@ -53,7 +53,7 @@ const Legal = () => {
           </p>
           <div
             data-aos="fade-up"
-            className="relative grid grid-cols-2 2xl:grid-cols-5 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center"
+            className="relative grid grid-cols-2 2xl:grid-cols-5 xl:grid-cols-5 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center"
           >
             {[
               { img: "/LAWFIRM.jpg", title: "Law Firm" },
@@ -64,7 +64,7 @@ const Legal = () => {
             ].map((box, index) => (
               <div
                 key={index}
-                className={`w-[150px] h-[150px] 2xl:h-[250px] 2xl:w-[250px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
+                className={`w-[150px] h-[150px] 2xl:h-[250px] 2xl:w-[250px] xl:h-[200px] xl:w-[200px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
                   selectedBox === index
                     ? "2xl:border-4 border-2 border-blue-400 bg-gray-800 scale-110"
                     : "bg-gray-700 hover:border-blue-400  hover:border-4 hover:scale-105"
@@ -95,11 +95,11 @@ const Legal = () => {
       {/* Konten Dinamis */}
       <div
         data-aos="fade-up"
-        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-4 2xl:mt-5  mt-48 max-w-full text-left"
+        className="relative dynamic-content 2xl:w-full  2xl:px-20 xl:px-20 w-full mx-auto overflow-hidden  px-4 2xl:mt-5 xl:mt-8  mt-48 max-w-full text-left"
       >
         {selectedBox === 0 && (
           <div  key={selectedBox} >
-            <h2 id="Law Firm" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+            <h2 id="Law Firm" className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               Law Firm
             </h2>
             <p>
@@ -261,7 +261,7 @@ const Legal = () => {
         )}
         {selectedBox === 1 && (
           <div  key={selectedBox} >
-            <h2 id="Crypto" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+            <h2 id="Crypto" className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               XYZ Crypto Universe
             </h2>
             <p>
@@ -629,7 +629,7 @@ const Legal = () => {
         )}
         {selectedBox === 3 && (
           <div  key={selectedBox} >
-            <h2 id="FILM" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
+            <h2 id="FILM" className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] font-bold py-5">
               FILM
             </h2>
             <p>
@@ -799,7 +799,7 @@ const Legal = () => {
             
             className="relative w-full"
           >
-            <h2 id="Podcast" className="text-secondary text-[28px] md:text-[48px] lg:text-[64px] py-5 font-bold">
+            <h2 id="Podcast" className="text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] text-[42px] md:text-[48px]py-5 font-bold">
               Podcast
             </h2>
             <p className="text-white mb-10">
@@ -937,7 +937,7 @@ const Legal = () => {
         )}
         {selectedBox === 4 && (
           <div  key={selectedBox} >
-            <h2 id="Community" className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
+            <h2 id="Community" className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] font-bold py-5">
               Community
             </h2>
             <p>

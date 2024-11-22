@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes, FaAlignRight } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -44,14 +44,14 @@ const Navbar = () => {
         </Link>
 
         {/* Icon Hamburger untuk Mobile */}
-        <div className="flex 2xl:hidden">
+        <div className="flex 2xl:hidden xl:hidden">
           <button onClick={toggleMobileMenu} className="text-white">
-            {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            {isMobileMenuOpen ? <FaTimes size={24} /> : <FaAlignRight size={24} />}
           </button>
         </div>
 
         {/* Navigasi Desktop */}
-        <div className="hidden 2xl:flex justify-end items-center gap-20 text-white font-bold">
+        <div className="hidden 2xl:flex xl:flex 2xl:text-[14px] xl:text-[14px] justify-end items-center gap-20 text-white font-bold">
           <Link href="/" passHref>
             <div className="navbar py-2 text-white hover:text-[#D4365F] transition duration-300 nav-link cursor-custom">
               Home

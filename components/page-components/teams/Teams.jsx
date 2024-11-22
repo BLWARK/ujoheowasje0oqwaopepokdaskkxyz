@@ -125,7 +125,7 @@ const Teams = () => {
         key={selectedLeader.name}
         className={`right w-full 2xl:w-1/2 flex flex-col justify-start items-start 2xl:p-5 p-0 2xl:gap-5 gap-2 text-secondary ${isAnimating ? "fade-out-animation" : "fade-in-animation"}`}
       >
-        <h2 data-aos="fade-left" data-aos-duration="1000" className="text-2xl font-bold 2xl:text-[56px] xl:text-[46px] md:text-[58px] text-[36px]">
+        <h2 data-aos="fade-left" data-aos-duration="1000" className="text-2xl font-bold 2xl:text-[52px] xl:text-[46px] md:text-[58px] text-[36px]">
           {selectedLeader.name}
         </h2>
         <h3 data-aos="fade-left" data-aos-duration="1000" className="text-lg font-light 2xl:text-[28px] xl:text-[26px] md:text-[58px] text-[36px] text-secondary 2xl:py-0 py-0 xl:py-5">

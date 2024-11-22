@@ -98,7 +98,7 @@ const AboutUs = () => {
       </div>
       <div
         className="relative w-full 2xl:block hidden"
-        style={getTransformStyle(300, -800, 20, 20)} // Initial X: 1300px, Y: 600px
+        style={getTransformStyle(300, -850, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
           src="/Pentagon1.png"
@@ -111,7 +111,7 @@ const AboutUs = () => {
       </div>
       <div
         className="relative w-full 2xl:block hidden"
-        style={getTransformStyle(80, -800, 20, 20)} // Initial X: 1300px, Y: 600px
+        style={getTransformStyle(80, -900, 20, 20)} // Initial X: 1300px, Y: 600px
       >
         <Image
           src="/Ball-Blue2.png"
@@ -239,13 +239,13 @@ const AboutUs = () => {
        <div
        
        className="absolute w-full 2xl:hidden xl:block lg:hidden md:hidden hidden"
-       style={getTransformStyle(970, -350, 20, 20)} // Initial X: 1300px, Y: 600px
+       style={getTransformStyle(1170, -200, 20, 20)} // Initial X: 1300px, Y: 600px
      >
        <Image
          src="/Idea.png"
          alt="Hero Image"
-         width={300}
-         height={300}
+         width={250}
+         height={250}
          priority={true}
          className="float-animation "
           
@@ -332,6 +332,9 @@ const AboutUs = () => {
       </div>
       
       </div>
+
+
+      
       <div data-aos="fade-left" className="relative right w-full 2xl:w-1/2 xl:w-full lg:w-full md:w-full flex 2xl:justify-end 2xl:items-end 2xl:-mt-20">
       <div className="content  flex flex-col xl:justify-center xl:items-center  md:justify-center md:items-center 2xl:justify-start 2xl:items-start">
       <div

@@ -11,8 +11,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-screen h-full flex flex-col bg-gray-800 ">
-      <div className="h-full flex flex-col 2xl:flex-row justify-start items-start">
+    <div className="w-screen h-full flex flex-col bg-gray-900 ">
+      <div className="h-full flex flex-col 2xl:flex-row xl:flex-row justify-start items-start">
         {/* Seksi 1 */}
         <div className="foot-sec1 px-10 py-10 2xl:px-20 2xl:py-20 w-full 2xl:w-[25%] flex flex-col justify-start items-start">
           <div className="Logo text-white font-bold text-[24px] 2xl:text-[32px]">
@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="contact mt-5 flex justify-start items-center gap-4">
             <div className="w-[8px] h-[8px] bg-hover rounded-full"></div>
             <div className="contact font-bold text-white">
-              Email : contact@xyzgroup.id
+              Email : info@xyzgroup.co.id
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ const Footer = () => {
           </div>
           <button
             className="px-6 py-3 2xl:px-8 2xl:py-4 bg-hover text-white font-semibold rounded-full hover:bg-yellow-700 mt-5"
-            // onClick={() => window.open("https://wa.me/your_number", "_blank", "noopener,noreferrer")}
+            onClick={() => window.open("https://wa.link/jkjtnj", "_blank", "noopener,noreferrer")}
           >
             Send Offers
           </button>

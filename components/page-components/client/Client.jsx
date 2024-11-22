@@ -29,12 +29,13 @@ const Client = () => {
         "/KAI.png",
         "/Vasanta.png",
         "/Bawaslu.png",
-        
         "/SM.png",
         "/INDOBAROMETER.png",
         "/MPR.png",
         "/Depaul.png",
         "/BPKH.png",
+        "/byu.webp",
+        "/BRIK BLACK.png",
       ];
   return (
     <div id="Client" className="Our-client w-full 2xl:h-full flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col justify-center items-center 2xl:px-20 px-5 md:py-[100px] py-[20px] bg-gradient-to-t from-teal-600 to-white ">
@@ -47,7 +48,7 @@ const Client = () => {
         <p className="w-full flex 2xl:justify-center 2xl:items-center xl:justify-center xl:items-center xl:text-center  md:justify-center md:items-center text-secondary 2xl:text-[56px] md:text-[58px] text-[36px] font-bold">
           Trusted Partnerships with Leading Brands
         </p>
-        <p className="text-black font-medium w-[80%] mt-5 2xl:text-center text-left">
+        <p className="text-black font-medium w-[80%] mt-5 2xl:text-center xl:text-center text-left">
           We are honored to partner with leading brands and emerging innovators, helping bring their visions to life. At XYZ Creative Group, our commitment to quality and creativity drives us to exceed expectations in every project.
         </p>
 

@@ -49,11 +49,11 @@ const Digital = () => {
           className="title w-full px-4 md:px-20 lg:px-40 absolute inset-0 flex flex-col justify-start items-center text-start text-white z-1 2xl:mt-[160px] mt-28"
         >
           <p className="w-full text-secondary text-[26px] md:text-[48px] lg:text-[54px] font-bold py-4  text-center">
-            Layanan Rental LED (AUVI89)
+            Digital Media Marketing
           </p>
           <div
             data-aos="fade-up"
-            className="relative grid grid-cols-2 2xl:grid-cols-4 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center"
+            className="relative grid grid-cols-2 2xl:grid-cols-4 xl:grid-cols-4 gap-10 justify-center items-center w-full h-auto  mt-10 z-1 2xl:px-20 px-5  2xl:mt-20   place-items-center"
           >
             {[
               { img: "/XYZONE.jpg", title: "XYZONE Media" },
@@ -63,10 +63,10 @@ const Digital = () => {
             ].map((box, index) => (
               <div
                 key={index}
-                className={`w-[150px] h-[150px] 2xl:h-[250px] 2xl:w-[250px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
+                className={`w-[150px] h-[150px] 2xl:h-[250px] 2xl:w-[250px] xl:h-[200px] xl:w-[200px] rounded-2xl nav-link cursor-custom flex items-center justify-center relative overflow-hidden ${
                   selectedBox === index
-                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-125"
-                    : "bg-gray-700 hover:border-secondary  hover:border-4 hover:scale-125"
+                    ? "2xl:border-4 border-2 border-secondary bg-gray-800 scale-110"
+                    : "bg-gray-700 hover:border-secondary  hover:border-4 hover:scale-105"
                 } transition-all duration-300`}
                 onClick={() => handleBoxClick(index)}
               >
@@ -96,11 +96,11 @@ const Digital = () => {
       {/* Konten Dinamis */}
       <div
         data-aos="fade-up"
-        className="relative dynamic-content 2xl:w-full  2xl:px-20 w-full mx-auto overflow-hidden  px-5 2xl:mt-20  mt-10 max-w-full text-left"
+        className="relative dynamic-content 2xl:w-full  2xl:px-20 xl:px-20 w-full mx-auto overflow-hidden  px-5 2xl:mt-20  mt-10 max-w-full text-left"
       >
         {selectedBox === 0 && (
           <div id="XYZONE" key={selectedBox} >
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+            <h2 className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               XYZONE Media (Portal News)
             </h2>
             <p>
@@ -184,7 +184,7 @@ const Digital = () => {
         )}
         {selectedBox === 1 && (
           <div id="DOOH" key={selectedBox} >
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
+            <h2 className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px]  text-[42px] 2xl:py-5 2xl:mb-0 mb-4 font-bold">
               Media Placement & Monitoring: TV, Radio, Print Ad, Digital Out of
               Home (DOOH)
             </h2>
@@ -254,7 +254,7 @@ const Digital = () => {
         )}
         {selectedBox === 2 && (
           <div id="Rental" key={selectedBox} >
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold py-5">
+            <h2 className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] font-bold py-5">
               LED Rental Service (AUVI89)
             </h2>
             <p>
@@ -315,7 +315,7 @@ const Digital = () => {
         )}
         {selectedBox === 3 && (
           <div id="Digital-Marketing" key={selectedBox} >
-            <h2 className=" text-secondary text-[28px] md:text-[48px] lg:text-[64px] font-bold mb-4 ">
+            <h2 className=" text-secondary 2xl:text-[42px] xl:text-[42px] lg:text-[64px] md:text-[48px] text-[42px] font-bold mb-4 ">
               Digital Marketing Services
             </h2>
             <p>

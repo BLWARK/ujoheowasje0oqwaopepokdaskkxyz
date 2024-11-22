@@ -100,7 +100,7 @@ const Services = () => {
             Creative Solutions That Inspire
           </p>
 
-          <p className="text-white font-medium w-[95%] mt-5 2xl:text-center text-left">
+          <p className="text-white font-medium w-full mt-5 2xl:text-center xl:text-center text-left">
             From concept to execution, we offer a full range of creative
             services tailored to meet your business needs. Let us help you bring
             your vision to life.

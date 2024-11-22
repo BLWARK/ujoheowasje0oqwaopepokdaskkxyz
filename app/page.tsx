@@ -11,6 +11,8 @@ import Client from "@/components/page-components/client/Client";
 import Project from "@/components/page-components/project/Project";
 import Teams from "@/components/page-components/teams/Teams";
 import Call from "@/components/page-components/call-to-action/Call"
+import Success from "@/components/page-components/succes-story/Succes";
+import Maps from "@/components/page-components/maps/Maps";
 
 const Page = () => {
   
@@ -44,15 +46,19 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center bg-gray-700 overflow-hidden">
+    <div className="w-full h-full  flex flex-col justify-center items-center bg-gray-700 overflow-hidden">
       <Hero />
       <About />
       <Pillar />
       <Services />
+      <Teams />
       <Client />
       <Project />
-      <Teams />
+      <Success/>
+      
+      
       <Call/>
+      <Maps/>
     </div>
   );
 };

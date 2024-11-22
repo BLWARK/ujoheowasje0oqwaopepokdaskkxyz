@@ -27,7 +27,7 @@ export default function RootLayout({
       <Navbar  />
           
           {/* Hero Section */}
-          <div className="relative " >
+          <div className="relative  " >
           
             {children}
            
