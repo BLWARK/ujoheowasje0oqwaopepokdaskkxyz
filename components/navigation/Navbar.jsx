@@ -55,8 +55,19 @@ const Navbar = () => {
           </div>
         </Link>
 
+        
+
         {/* Icon Hamburger untuk Mobile */}
-        <div className="flex 2xl:hidden xl:hidden">
+        <div className="flex 2xl:hidden xl:hidden gap-6">
+        <Link href="/main/pricing" passHref>
+            <div
+              role="button"
+             
+              className={`navbar py-2 px-6 text-white text-sm hover:scale-105 hover:border-2 border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-lg transition duration-300 nav-link cursor-custom ${animate ? "pulsePricing" : ""}`}
+            >
+              Pricing
+            </div>
+          </Link>
           <button onClick={toggleMobileMenu} className="text-white">
             {isMobileMenuOpen ? <FaTimes size={24} /> : <FaAlignRight size={24} />}
           </button>
@@ -237,6 +248,7 @@ const Navbar = () => {
               Teams
             </div>
           </Link>
+         
         </div>
       </div>
     </div>

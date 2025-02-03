@@ -197,9 +197,9 @@ const PricingPage = () => {
           >
             <div>
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-3xl font-bold text-black">{pkg.name}</h2>
+                <h2 className="2xl:text-3xl text-2xl font-bold text-black">{pkg.name}</h2>
                 {pkg.highlight && (
-                  <span className="bg-red-500 text-white px-6 animate-pulse py-2 rounded text-sm">Best Value</span>
+                  <span className="bg-red-500 text-white 2xl:px-6 px-2 animate-pulse py-2 rounded text-sm">Best Value</span>
                 )}
               </div>
               <p className="text-md text-red-500 line-through">{pkg.originalPrice}</p>
