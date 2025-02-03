@@ -1,24 +1,41 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PricingPage = () => {
   const [billingCycle, setBillingCycle] = useState('monthly');
 
-  // Paket data pricing
+  useEffect(() => {
+    AOS.init({
+      duration: 7000, // Durasi animasi (ms)
+      easing: "ease-out", // Gaya easing
+      once: true, // Animasi hanya terjadi sekali
+    });
+  }, []);
+
+  // Diskon yang dihitung manual
+  const discounts = {
+    "Silver BroadReach": { semiAnnual: 5.3, annual: 11.74 },
+    "Gold OmniReach": { semiAnnual: 7.92, annual: 13.96 },
+    "Platinum OmniMax": { semiAnnual: 5.95, annual: 11.9 },
+    "Diamond ImpactReach": { semiAnnual: 7.35, annual: 13.24 }
+  };
+
   const packages = [
     {
       name: 'Silver BroadReach',
       highlight: false,
       cardColor: 'bg-gradient-to-br from-white to-cyan-400',
       prices: {
-        monthly: 'Rp 11,000,000/month',
-        semiAnnual: 'Rp 62,500,000/6 months',
-        annual: 'Rp 116,500,000/year',
+        monthly: 'Rp 11,000,000',
+        semiAnnual: 'Rp 62,500,000',
+        annual: 'Rp 116,500,000',
       },
       originalPrice: 'Rp 18,000,000/month',
-      totalReach: '2,000,000 - 3,500,000 reach/month',
-      totalFollowers: '500 - 1,500 followers/month',
+      totalReach: 'Total Reach: 2,000,000 - 3,500,000/month',
+      totalFollowers: 'Total Followers: 500 - 1,500 followers/month',
       features: [
         {
           title: 'PORTAL',
@@ -35,13 +52,13 @@ const PricingPage = () => {
       highlight: false,
       cardColor: 'bg-gradient-to-br from-white to-cyan-400',
       prices: {
-        monthly: 'Rp 20,000,000/month',
-        semiAnnual: 'Rp 110,500,000/6 months',
-        annual: 'Rp 206,500,000/year',
+        monthly: 'Rp 20,000,000',
+        semiAnnual: 'Rp 110,500,000',
+        annual: 'Rp 206,500,000',
       },
       originalPrice: 'Rp 39,522,200/month',
-      totalReach: '2,500,000 - 8,000,000 reach/month',
-      totalFollowers: '1,500 - 3,500 followers/month',
+      totalReach: 'Total Reach: 2,500,000 - 8,000,000/month',
+      totalFollowers: 'Total Followers: 1,500 - 3,500 followers/month',
       features: [
         {
           title: 'MEDIA SOSIAL XYZONE',
@@ -62,13 +79,13 @@ const PricingPage = () => {
       highlight: true,
       cardColor: 'bg-gradient-to-br from-white to-cyan-400',
       prices: {
-        monthly: 'Rp 28,000,000/month',
-        semiAnnual: 'Rp 158,000,000/6 months',
-        annual: 'Rp 296,000,000/year',
+        monthly: 'Rp 28,000,000',
+        semiAnnual: 'Rp 158,000,000',
+        annual: 'Rp 296,000,000',
       },
       originalPrice: 'Rp 48,499,960/month',
-      totalReach: '4,000,000 - 8,000,000 reach/month',
-      totalFollowers: '3,000 - 7,000 followers/month',
+      totalReach: 'Total Reach: 4,000,000 - 8,000,000/month',
+      totalFollowers: 'Total Followers: 3,000 - 7,000 followers/month',
       features: [
         {
           title: 'SOSIAL MEDIA MANAGEMENT',
@@ -98,13 +115,13 @@ const PricingPage = () => {
       highlight: false,
       cardColor: 'bg-gradient-to-br from-white to-cyan-400',
       prices: {
-        monthly: 'Rp 51,000,000/month',
-        semiAnnual: 'Rp 283,500,000/6 months',
-        annual: 'Rp 531,000,000/year',
+        monthly: 'Rp 51,000,000',
+        semiAnnual: 'Rp 283,500,000',
+        annual: 'Rp 531,000,000',
       },
       originalPrice: 'Rp 87,891,600/month',
-      totalReach: '5,000,000 - 10,000,000 reach/month',
-      totalFollowers: '4,000 - 10,000 followers/month',
+      totalReach: 'Total Reach: 5,000,000 - 10,000,000 /month',
+      totalFollowers: 'Total Followers: 4,000 - 10,000 followers/month',
       features: [
         {
           title: 'SOSIAL MEDIA MANAGEMENT',
@@ -120,7 +137,7 @@ const PricingPage = () => {
             `Penyesuaian konten dengan tren terkini dan konten yang lebih kreatif ${billingCycle !== 'monthly' ? ' - Eksklusif' : ''}`,
             `${billingCycle === 'annual' ? 'Optimalisasi hashtag dan caption SEO untuk engagement maksimal - Eksklusif' : ''}`,
             'Dapat landing page website brand (domain dan server exclude)'
-          ].filter(Boolean) // Filter out empty strings for conditional items
+          ].filter(Boolean)
         },
         {
           title: 'XYZONE TV',
@@ -140,17 +157,17 @@ const PricingPage = () => {
 
   return (
     <div className="2xl:p-6 2xl:px-20 p-4 bg-gray-750 mt-20 ">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-bold text-center mb-4 text-secondary">BEKI PACKAGE 2025</h1>
+      <div className="flex flex-col 2xl:justify-center justify-start 2xl:items-center items-start">
+        <h1 className="2xl:text-5xl text-3xl font-bold 2xl:text-center text-left mb-4 text-secondary">BEKI PACKAGE 2025</h1>
         <div className="w-[100px] h-[5px] bg-hover rounded-full my-5"></div>
-        <p className="text-center text-gray-300 mb-8 w-[70%]">
+        <p className="2xl:text-center text-left text-gray-300 mb-8 2xl:w-[70%] w-full 2xl:text-xl text-small ">
           PT Bisnis Ekosistem Kreatif Indonesia melalui XYZONE Media menghadirkan paket pemasaran terintegrasi 
           untuk mendukung pertumbuhan bisnis di era digital. Paket ini dirancang untuk meningkatkan jangkauan, 
           memperkuat branding, dan meningkatkan engagement.
         </p>
       </div>
       {/* Billing Toggle */}
-      <div className="flex justify-center mb-8">
+      <div className="flex 2xl:justify-center justify-start overflow-auto mb-8">
         <button
           onClick={() => setBillingCycle('monthly')}
           className={`px-4 py-2 mx-2 ${billingCycle === 'monthly' ? 'bg-blue-500 text-white' : 'bg-gray-400'} rounded`}
@@ -176,24 +193,31 @@ const PricingPage = () => {
         {packages.map((pkg, index) => (
           <div
             key={index}
-            className={`p-6 rounded-lg shadow-md ${pkg.cardColor} flex flex-col justify-between h-full hover:scale-105 hover:bg-gradient-to-tr from-white to-cyan-400 transition-transform ${pkg.highlight ? 'border-4 border-blue-500 scale-100' : ''}`}
+            className={`p-6 rounded-lg shadow-md ${pkg.cardColor} flex flex-col justify-between h-full transition-transform transform hover:scale-105 hover:bg-gradient-to-tr ${pkg.highlight ? 'border-4 border-hover scale-100' : ''}`}
           >
             <div>
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-3xl font-bold text-black">{pkg.name}</h2>
-              {pkg.highlight && (
-                <span className="bg-red-500 text-white px-6 animate-pulse py-2 rounded text-sm">Best Value</span>
-              )}
-            </div>
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-3xl font-bold text-black">{pkg.name}</h2>
+                {pkg.highlight && (
+                  <span className="bg-red-500 text-white px-6 animate-pulse py-2 rounded text-sm">Best Value</span>
+                )}
+              </div>
               <p className="text-md text-red-500 line-through">{pkg.originalPrice}</p>
-              <p className="text-3xl font-bold text-hover mb-10">{pkg.prices[billingCycle]}</p>
-
+              <p className="text-3xl font-bold text-hover flex items-center gap-2">
+                {pkg.prices[billingCycle]}
+                {billingCycle !== 'monthly' && (
+                  <span className="text-red-500 text-sm">
+                    (Save {billingCycle === 'semiAnnual' ? discounts[pkg.name].semiAnnual : discounts[pkg.name].annual}%)
+                  </span>
+                )}
+              </p>
+              <div className="w-full h-[1px] bg-gray-400 opacity-80 my-10"></div>
               {pkg.features.map((feature, i) => (
                 <div key={i} className="mb-4 gap-4">
-                  <h3 className="font-bold text-gray-800 mb-2 ">{feature.title}</h3>
-                  <ul className='space-y-2'>
+                  <h3 className="font-bold text-gray-800 mb-2">{feature.title}</h3>
+                  <ul className="space-y-2">
                     {feature.items.map((item, j) => (
-                      <li key={j} className="flex items-center text-gray-950 text-sm px-3 ">
+                      <li key={j} className="flex items-center text-gray-950 text-sm px-3">
                         <FaCheckCircle className="text-green-500 mr-4 text-sm" /> {item}
                       </li>
                     ))}
@@ -201,11 +225,11 @@ const PricingPage = () => {
                 </div>
               ))}
             </div>
-
             <div className="mt-6">
-              <p className="text-gray-600 text-xs mb-2">{pkg.totalReach}</p>
-              <p className="text-gray-600 text-xs mb-2">{pkg.totalFollowers}</p>
-              <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+              <div className="w-full h-[1px] bg-gray-400 my-10"></div>
+              <p className="text-red-500 text-xs font-semibold italic mb-2">{pkg.totalReach}</p>
+              <p className="text-red-500 text-xs font-semibold italic mb-2">{pkg.totalFollowers}</p>
+              <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 mt-10">
                 Contact Us
               </button>
             </div>

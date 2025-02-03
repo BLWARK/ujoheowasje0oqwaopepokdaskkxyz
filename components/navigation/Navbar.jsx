@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaTimes, FaAlignRight } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -25,6 +26,17 @@ const Navbar = () => {
 
     setIsMobileMenuOpen(false); // Tutup menu setelah klik (untuk tampilan mobile)
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate(true);
+      setTimeout(() => {
+        setAnimate(false);
+      }, 2000);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-20 w-full h-[80px] flex justify-center bg-opacity-30 backdrop-blur-md items-center">
@@ -51,7 +63,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigasi Desktop */}
-        <div className="hidden 2xl:flex xl:flex 2xl:text-[14px] xl:text-[14px] justify-end items-center gap-20 text-white font-bold">
+        <div className="hidden 2xl:flex xl:flex 2xl:text-[14px] xl:text-[14px] justify-end items-center gap-14 text-white font-bold">
           <Link href="/" passHref>
             <div className="navbar py-2 text-white hover:text-[#D4365F] transition duration-300 nav-link cursor-custom">
               Home
@@ -115,6 +127,15 @@ const Navbar = () => {
               className="navbar py-2 text-white hover:text-[#D4365F] transition duration-300 nav-link cursor-custom"
             >
               Teams
+            </div>
+          </Link>
+          <Link href="/main/pricing" passHref>
+            <div
+              role="button"
+             
+              className={`navbar py-2 px-8 text-white hover:scale-105 hover:border-2 border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl transition duration-300 nav-link cursor-custom ${animate ? "pulsePricing" : ""}`}
+            >
+              Pricing
             </div>
           </Link>
         </div>
