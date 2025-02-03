@@ -825,15 +825,15 @@ const Legal = () => {
                 {
                   title: "LBJ 24 Viral",
                   video:
-                    "https://www.youtube.com/embed/mzNWohCo3P8?si=gj6zg6DJCfXst7nR",
+                    "https://www.youtube.com/embed/2oidN_TRdns?si=zKVynJQgaArO0bb4",
                   description:
                     "Exploring viral phenomena on social media, providing in-depth analysis and behind-the-scenes stories of the latest trending topics.",
-                  link: "https://youtube.com/playlist?list=PL2lqFNqw5dch8kCEgfz1NZyg-kRghtuur&si=DNCdM-k51pPfggCR",
+                  link: "https://www.youtube.com/playlist?list=PLZE-OXCF6fdlKVm13aQ93dCdEE29JuyRw",
                 },
                 {
                   title: "Jalan Tengah",
                   video:
-                    "https://www.youtube.com/embed/F5wWOARZ1Fw?si=zxii4LXnMSKYWsG",
+                    "https://www.youtube.com/embed/pm-aWtgO_bM?si=eQ-hYrjozpqGuFdN",
                   description:
                     "A program that discusses social and political issues from a neutral standpoint, fostering balanced and constructive dialogue to promote mutual understanding.",
                   link: "https://youtube.com/playlist?list=PL2lqFNqw5dcjQ5TqkRBviEw1m40lOXyCb&si=biyAHSYIYkFmNwxQ", // Tambahkan link eksternal
@@ -873,7 +873,7 @@ const Legal = () => {
                 {
                   title: "C. Talk",
                   video:
-                    "https://www.youtube.com/embed/Go0Mak0XIn8?si=111fqFL-L5_3c0x8",
+                    "https://www.youtube.com/embed/Rxehf8Y83g8?si=P80MDOMxEoxjq6mu",
                   description:
                     "In-depth discussions about careers, business, and inspiring journeys from professionals across various fields, offering valuable insights for listeners aiming to develop themselves.",
                   link: "https://youtube.com/playlist?list=PL2lqFNqw5dcg08RXmZ8S3vZqCa_-JIjAR&si=V2ZSg52Kimzr5TqF",

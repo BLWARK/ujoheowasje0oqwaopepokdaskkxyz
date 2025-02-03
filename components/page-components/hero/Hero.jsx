@@ -277,7 +277,7 @@ const Hero = () => {
       href="https://xyzonemedia.com" // Ganti dengan URL Anda
       target="_blank"
       rel="noopener noreferrer"
-      className="relative  w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
+      className="relative  w-[170px] h-[55px] md:w-[200px] md:h-[55px] lg:w-[250px] lg:h-[55px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
     >
       <Image
         src="/xyzone.png" // Ganti dengan gambar Anda
@@ -292,7 +292,7 @@ const Hero = () => {
       href="https://lbj.xyzonemedia.com/" // Ganti dengan URL Anda
       target="_blank"
       rel="noopener noreferrer"
-      className="relative w-[170px] h-[55px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
+      className="relative w-[170px] h-[55px] md:w-[200px] md:h-[55px] lg:w-[250px] lg:h-[55px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
     >
       <Image
         src="/LBJ.png" // Ganti dengan gambar Anda
