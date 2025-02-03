@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheck } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -189,7 +190,7 @@ const PricingPage = () => {
       </div>
 
       {/* Pricing Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {packages.map((pkg, index) => (
           <div
             key={index}
@@ -197,9 +198,9 @@ const PricingPage = () => {
           >
             <div>
               <div className="flex justify-between items-center mb-4">
-                <h2 className="2xl:text-3xl text-2xl font-bold text-black">{pkg.name}</h2>
+                <h2 className="2xl:text-2xl text-2xl font-bold text-black">{pkg.name}</h2>
                 {pkg.highlight && (
-                  <span className="bg-red-500 text-white 2xl:px-6 px-2 animate-pulse py-2 rounded text-sm">Best Value</span>
+                  <span className="bg-red-500 text-white 2xl:px-2 px-2 animate-pulse py-2 rounded text-sm">Best Value</span>
                 )}
               </div>
               <p className="text-md text-red-500 line-through">{pkg.originalPrice}</p>
@@ -217,8 +218,8 @@ const PricingPage = () => {
                   <h3 className="font-bold text-gray-800 mb-2">{feature.title}</h3>
                   <ul className="space-y-2">
                     {feature.items.map((item, j) => (
-                      <li key={j} className="flex items-center text-gray-950 text-sm px-3">
-                        <FaCheckCircle className="text-green-500 mr-4 text-sm" /> {item}
+                      <li key={j} className="flex items-center text-gray-950 text-sm px-2">
+                        <FaCheck className="text-green-500 mr-2 text-lg" /> {item}
                       </li>
                     ))}
                   </ul>
