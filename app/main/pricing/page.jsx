@@ -27,7 +27,7 @@ const PricingPage = () => {
     {
       name: 'Silver BroadReach',
       highlight: false,
-      cardColor: 'bg-gradient-to-br from-white to-cyan-400',
+      cardColor: 'bg-white',
       prices: {
         monthly: 'Rp 11,000,000',
         semiAnnual: 'Rp 62,500,000',
@@ -50,7 +50,7 @@ const PricingPage = () => {
     {
       name: 'Gold OmniReach',
       highlight: false,
-      cardColor: 'bg-gradient-to-br from-white to-cyan-400',
+      cardColor: 'bg-white',
       prices: {
         monthly: 'Rp 20,000,000',
         semiAnnual: 'Rp 110,500,000',
@@ -77,7 +77,7 @@ const PricingPage = () => {
     {
       name: 'Platinum OmniMax',
       highlight: true,
-      cardColor: 'bg-gradient-to-br from-white to-cyan-400',
+      cardColor: 'bg-white',
       prices: {
         monthly: 'Rp 28,000,000',
         semiAnnual: 'Rp 158,000,000',
@@ -113,7 +113,7 @@ const PricingPage = () => {
     {
       name: 'Diamond ImpactReach',
       highlight: false,
-      cardColor: 'bg-gradient-to-br from-white to-cyan-400',
+      cardColor: 'bg-white',
       prices: {
         monthly: 'Rp 51,000,000',
         semiAnnual: 'Rp 283,500,000',
