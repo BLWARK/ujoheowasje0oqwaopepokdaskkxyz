@@ -207,3 +207,42 @@ a.cursor-custom {
 .pulsePricing {
   animation: pulseSlow 2s ease-in-out;
 }
+
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 24, 39, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  overflow: hidden;
+  transition: clip-path 1.5s ease-in-out;
+  clip-path: inset(0 0 0 0); /* Default terbuka penuh */
+}
+
+.hidden {
+  clip-path: inset(0 100% 0 0); /* Menutup ke kanan seperti tirai */
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

@@ -41,20 +41,18 @@ const Hero = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/VD1.mp4" type="video/mp4" />
+        <source src="/HEROBG.mp4" type="video/mp4" />
         Browser Anda tidak mendukung video.
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black 2xl:opacity-20 opacity-30"></div>
-
-
+      <div className="absolute inset-0 bg-black 2xl:opacity-80 opacity-80"></div>
 
 
 
       {/* Floating Images with Parallax Effect */}
       {/* Desktop */}
-      <div
+      {/* <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden  hidden"
         style={getTransformStyle(1300, 600, 20, 20)} // Initial X: 1300px, Y: 600px
         data-aos="fade-up"
@@ -67,9 +65,9 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
         style={getTransformStyle(260, 50, 15, 15)} // Initial X: 260px, Y: 200px
         data-aos="fade-up"
@@ -82,8 +80,9 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
-      <div
+      </div> */}
+
+      {/* <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
         style={getTransformStyle(260, 300, 10, 10)} // Initial X: 260px, Y: 400px
         data-aos="fade-up"
@@ -97,6 +96,7 @@ const Hero = () => {
           className="float-animation"
         />
       </div>
+
       <div
         className="relative w-full 2xl:block xl:hidden lg:hidden md:hidden hidden"
         style={getTransformStyle(1350, -300, 20, 20)} // Initial X: 1400px, Y: -200px
@@ -110,7 +110,7 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
 
 
@@ -118,7 +118,7 @@ const Hero = () => {
 
 
        {/* Mobile */}
-       <div
+       {/* <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
         style={getTransformStyle(280, 500, 40, 40)} // Initial X: 1300px, Y: 600px
       >
@@ -130,9 +130,9 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
         style={getTransformStyle(20, 120, 15, 15)} // Initial X: 260px, Y: 200px
       >
@@ -144,9 +144,9 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="relative w-full 2xl:hidden xl:hidden lg:hidden md:hidden block"
         style={getTransformStyle(40, 400, 10, 10)} // Initial X: 260px, Y: 400px
       >
@@ -172,11 +172,11 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
 
         {/* tablet */}
-        <div
+        {/* <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden "
         style={getTransformStyle(1200, 600, 20, 20)} // Initial X: 1300px, Y: 600px
       >
@@ -188,9 +188,9 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
         style={getTransformStyle(160, 100, 15, 15)} // Initial X: 260px, Y: 200px
       >
@@ -203,6 +203,8 @@ const Hero = () => {
           className="float-animation"
         />
       </div>
+
+
       <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
         style={getTransformStyle(290, 380, 10, 10)} // Initial X: 260px, Y: 400px
@@ -216,6 +218,7 @@ const Hero = () => {
           className="float-animation"
         />
       </div>
+
       <div
         className="relative w-full 2xl:hidden xl:block lg:block md:hidden hidden"
         style={getTransformStyle(1200, -200, 20, 20)} // Initial X: 1400px, Y: -200px
@@ -228,7 +231,7 @@ const Hero = () => {
           priority={true}
           className="float-animation"
         />
-      </div>
+      </div> */}
 
 
 
@@ -265,37 +268,37 @@ const Hero = () => {
     PT Bisnis Ekosistem Kreatif Indonesia
   </p>
 
-  {/* Kotak Gambar */}
+  
   <div className="flex 2xl:flex-row flex-col justify-center items-center 2xl:gap-10 gap-5 mt-10 opacity-0" 
     style={{
       animation: "slide-up 1.5s ease-out forwards",
       animationDelay: "2.0s",
     }}
   >
-    {/* Kotak 1 */}
+    
     <a
-      href="https://xyzonemedia.com" // Ganti dengan URL Anda
+      href="https://xyzonemedia.com" 
       target="_blank"
       rel="noopener noreferrer"
       className="relative  w-[170px] h-[55px] md:w-[200px] md:h-[55px] lg:w-[250px] lg:h-[55px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px]] border-2 border-cyan-400 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
     >
       <Image
-        src="/xyzone.png" // Ganti dengan gambar Anda
+        src="/xyzone.png" 
         alt="Kotak 1"
         fill
         className="object-contain px-10"
       />
     </a>
 
-    {/* Kotak 2 */}
+    
     <a
-      href="https://lbj.xyzonemedia.com/" // Ganti dengan URL Anda
+      href="https://lbj.xyzonemedia.com/"
       target="_blank"
       rel="noopener noreferrer"
       className="relative w-[170px] h-[55px] md:w-[200px] md:h-[55px] lg:w-[250px] lg:h-[55px] xl:w-[200px] xl:h-[75px] 2xl:w-[200px] 2xl:h-[75px] border-2 border-cyan-400  bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-xl overflow-hidden hover:scale-105 transition transform duration-300 cursor-custom nav-link"
     >
       <Image
-        src="/LBJ.png" // Ganti dengan gambar Anda
+        src="/LBJ.png" 
         alt="Kotak 2"
         fill
         className="object-contain"

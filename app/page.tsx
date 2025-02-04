@@ -1,8 +1,11 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import Image from "next/image";
+
 import Hero from "@/components/page-components/hero/Hero";
 import About from "@/components/page-components/about-us/AboutUs";
 import Pillar from "@/components/page-components/pillars/Pillar";
@@ -10,56 +13,69 @@ import Services from "@/components/page-components/services/Services";
 import Client from "@/components/page-components/client/Client";
 import Project from "@/components/page-components/project/Project";
 import Teams from "@/components/page-components/teams/Teams";
-import Call from "@/components/page-components/call-to-action/Call"
+import Call from "@/components/page-components/call-to-action/Call";
 import Success from "@/components/page-components/succes-story/Succes";
 import Maps from "@/components/page-components/maps/Maps";
 
 const Page = () => {
-  
+  const [isLoading, setIsLoading] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 600,
       easing: "ease-out",
       once: true,
     });
 
-    // Scroll ke elemen sesuai hash URL (jika ada)
-    const handleHashChange = () => {
-      const hash = window.location.hash.substring(1); // Ambil hash tanpa tanda #
-      const element = document.getElementById(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+    const handlePageLoad = () => {
+      setTimeout(() => {
+        setIsOpen(true); // Buka tirai
+        setTimeout(() => setIsLoading(false), 1500); // Sembunyikan loading setelah animasi
+      }, 500);
     };
 
-    // Listener untuk perubahan hash
-    window.addEventListener("hashchange", handleHashChange);
+    if (document.readyState === "complete") {
+      handlePageLoad();
+    } else {
+      window.addEventListener("load", handlePageLoad);
+    }
 
-    // Panggil saat pertama kali halaman dimuat
-    handleHashChange();
-
-    // Bersihkan listener saat komponen unmount
     return () => {
-      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("load", handlePageLoad);
     };
   }, []);
 
   return (
-    <div className="w-full h-full  flex flex-col justify-center items-center bg-gray-700 overflow-hidden">
-      <Hero />
-      <About />
-      <Pillar />
-      <Services />
-      <Teams />
-      <Client />
-      <Project />
-      <Success/>
-      
-      
-      <Call/>
-      <Maps/>
-    </div>
+    <>
+      {isLoading && (
+        <div className={`loading-overlay ${isOpen ? "hidden" : ""}`}>
+          <div className="loading-content">
+            <Image
+              src="/loading.gif"
+              alt="Loading..."
+              className="loading-gif"
+              width={400}
+              height={400}
+            />
+           
+          </div>
+        </div>
+      )}
+
+      <div className="w-full h-full flex flex-col justify-center items-center bg-gray-700 overflow-hidden">
+        <Hero />
+        <About />
+        <Pillar />
+        <Services />
+        <Teams />
+        <Client />
+        <Project />
+        <Success />
+        <Call />
+        <Maps />
+      </div>
+    </>
   );
 };
 
