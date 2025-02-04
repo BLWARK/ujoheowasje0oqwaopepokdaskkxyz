@@ -90,7 +90,7 @@ const PricingPage = () => {
                   </span>
                 )}
               </div>
-              <p className="text-3xl font-bold text-hover flex items-center gap-2">
+              <p className="text-3xl font-bold text-hover flex flex-col items-start gap-2">
                 {pkg.prices[billingCycle]}
                 {billingCycle !== "monthly" && (
                   <span className="text-red-500 text-sm">
