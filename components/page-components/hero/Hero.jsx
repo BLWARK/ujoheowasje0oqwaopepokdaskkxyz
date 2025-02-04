@@ -41,7 +41,7 @@ const Hero = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/HEROBG.mp4" type="video/mp4" />
+        <source src="/0204.mp4" type="video/mp4" />
         Browser Anda tidak mendukung video.
       </video>
 
