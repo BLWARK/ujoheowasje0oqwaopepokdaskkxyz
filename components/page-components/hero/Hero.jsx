@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 
 const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     AOS.init({
@@ -27,9 +27,9 @@ const Hero = () => {
   }, []);
 
   // Function to calculate combined transform with initial Tailwind translate
-  const getTransformStyle = (initialX, initialY, strengthX, strengthY) => ({
-    transform: `translate(${initialX + mousePosition.x * strengthX}px, ${initialY + mousePosition.y * strengthY}px)`,
-  });
+  // const getTransformStyle = (initialX, initialY, strengthX, strengthY) => ({
+  //   transform: `translate(${initialX + mousePosition.x * strengthX}px, ${initialY + mousePosition.y * strengthY}px)`,
+  // });
 
   return (
     <div id="home" className="Hero relative w-full h-screen md:h-screen "  >
