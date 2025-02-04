@@ -246,14 +246,14 @@ const Hero = () => {
     className="2xl:w-[10%] xl:w-[10%] w-[30%]"
     style={{
       animation: "slide-up 1.5s ease-out forwards",
-      animationDelay: "0.5s",
+      animationDelay: "1.5s",
     }}
   />
   <h1
     className="w-full 2xl:text-[106px] text-[36px] md:text-[48px] lg:text-[54px] font-black py-4 leading-[1.2] opacity-0 text-secondary glow-text"
     style={{
       animation: "slide-up 1.5s ease-out forwards",
-      animationDelay: "1.0s",
+      animationDelay: "2.0s",
     }}
   >
     CREATIVE GROUP
@@ -262,7 +262,7 @@ const Hero = () => {
     className="w-full 2xl:text-[32px] text-[14px] md:text-[16px] font-medium text-white opacity-0"
     style={{
       animation: "slide-up 1.5s ease-out forwards",
-      animationDelay: "1.5s",
+      animationDelay: "2.5s",
     }}
   >
     PT Bisnis Ekosistem Kreatif Indonesia
@@ -272,7 +272,7 @@ const Hero = () => {
   <div className="flex 2xl:flex-row flex-col justify-center items-center 2xl:gap-10 gap-5 mt-10 opacity-0" 
     style={{
       animation: "slide-up 1.5s ease-out forwards",
-      animationDelay: "2.0s",
+      animationDelay: "3.0s",
     }}
   >
     

@@ -55,8 +55,8 @@ const Page = () => {
               src="/loading.gif"
               alt="Loading..."
               className="loading-gif"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
             />
            
           </div>
