@@ -14,16 +14,16 @@ const Hero = () => {
       once: true,
     });
 
-    const handleMouseMove = (event) => {
-      setMousePosition({
-        x: (event.clientX / window.innerWidth) - 0.5, // Normalize x (-0.5 to 0.5)
-        y: (event.clientY / window.innerHeight) - 0.5, // Normalize y (-0.5 to 0.5)
-      });
-    };
+    // const handleMouseMove = (event) => {
+    //   setMousePosition({
+    //     x: (event.clientX / window.innerWidth) - 0.5, // Normalize x (-0.5 to 0.5)
+    //     y: (event.clientY / window.innerHeight) - 0.5, // Normalize y (-0.5 to 0.5)
+    //   });
+    // };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    // window.addEventListener("mousemove", handleMouseMove);
 
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    // return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   // Function to calculate combined transform with initial Tailwind translate

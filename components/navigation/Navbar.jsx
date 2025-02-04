@@ -58,7 +58,7 @@ const Navbar = () => {
         
 
         {/* Icon Hamburger untuk Mobile */}
-        <div className="flex 2xl:hidden xl:hidden gap-6">
+        <div className="flex 2xl:hidden xl:hidden gap-6 z-50">
         <Link href="/main/pricing" passHref>
             <div
               role="button"
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigasi Desktop */}
-        <div className="hidden 2xl:flex xl:flex 2xl:text-[14px] xl:text-[14px] justify-end items-center gap-14 text-white font-bold">
+        <div className="hidden 2xl:flex xl:flex 2xl:text-[14px] xl:text-[14px] justify-end items-center gap-14 text-white font-bold z-50">
           <Link href="/" passHref>
             <div className="navbar py-2 text-white hover:text-[#D4365F] transition duration-300 nav-link cursor-custom">
               Home

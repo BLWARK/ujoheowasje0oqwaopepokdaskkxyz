@@ -49,7 +49,7 @@ const Page = () => {
   return (
     <>
       {isLoading && (
-        <div className={`loading-overlay ${isOpen ? "hidden" : ""}`}>
+        <div className={`loading-overlay ${isOpen ? "hiddens" : ""}`}>
           <div className="loading-content">
             <Image
               src="/loading.gif"

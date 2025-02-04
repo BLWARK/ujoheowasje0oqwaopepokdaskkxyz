@@ -222,11 +222,11 @@ a.cursor-custom {
   z-index: 50;
   overflow: hidden;
   transition: clip-path 1.5s ease-in-out;
-  clip-path: inset(0 0 0 0); /* Default terbuka penuh */
+  clip-path: inset(0 0 0 0); 
 }
 
-.hidden {
-  clip-path: inset(0 100% 0 0); /* Menutup ke kanan seperti tirai */
+.hiddens {
+  clip-path: inset(0 100% 0 0); 
 }
 
 .loading-content {
